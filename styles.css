@@ -130,16 +130,30 @@ button, input, select, textarea { font: inherit; }
 }
 
 .pc-brand {
-  position: relative;
-  width: 196px;
-  height: 44px;
-  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 214px;
+  height: 48px;
+  overflow: visible;
 }
 
 .pc-brand img {
-  width: 100%;
-  height: 100%;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
+}
+
+.pc-brand > span {
+  color: #6a6d72;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.pc-brand > span > span {
+  color: var(--accent);
 }
 
 .pc-links {
@@ -1410,6 +1424,19 @@ body:has(link[href="../styles.css"]) .icon-arrow-up-right { --icon: url("../asse
 
 @media (max-width: 760px) {
   .pc-menu { display: block; }
+
+  .pc-brand {
+    min-width: 0;
+  }
+
+  .pc-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .pc-brand > span {
+    font-size: 1.22rem;
+  }
 
   .pc-links {
     position: fixed;
