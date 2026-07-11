@@ -1,0 +1,4 @@
+.codex-static-server.js
+.vercel/
+node_modules/
+*.log
