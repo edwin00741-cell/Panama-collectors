@@ -8,9 +8,10 @@ const heroSlider = document.querySelector("[data-hero-slider]");
 const heroPrev = document.querySelector("[data-hero-prev]");
 const heroNext = document.querySelector("[data-hero-next]");
 const heroImages = [
-  "url('/assets/visuals/visual-operations.svg')",
-  "url('/assets/visuals/visual-team.svg')",
-  "url('/assets/visuals/visual-operations.svg')"
+  "url('/assets/images/panama-collectors-recuperacion-bancaria-control-operativo-hero.webp')",
+  "url('/assets/images/planeacion-operativa-recuperacion-activos.webp')",
+  "url('/assets/images/gestion-integral-recuperacion-y-cobros.webp')",
+  "url('/assets/images/experiencia-bancaria-panama-collectors.webp')"
 ];
 const bankLogos = [
   { name: "BAC Credomatic", src: "/assets/banks/bac.png" },
@@ -47,14 +48,16 @@ const updateServiceTracks = () => {
     const progress = clamp((distance + travel / 2) / travel, 0, 1);
 
     if (track.classList.contains("vertical")) {
-      const maxShift = Math.max(track.scrollHeight - media.clientHeight + 140, 220);
-      const y = -progress * maxShift;
-      track.style.transform = `translateX(-50%) translateY(${y}px)`;
+      const overflow = Math.max(track.scrollHeight - media.clientHeight, 0);
+      const maxShift = Math.min(overflow, 170);
+      const y = (0.5 - progress) * maxShift;
+      track.style.transform = `translate(-50%, -50%) translateY(${y}px)`;
       return;
     }
 
-    const maxShift = Math.max(track.scrollWidth - media.clientWidth + 140, 220);
-    const x = -progress * maxShift;
+    const overflow = Math.max(track.scrollWidth - media.clientWidth, 0);
+    const maxShift = Math.min(overflow, 190);
+    const x = (0.5 - progress) * maxShift;
     track.style.transform = `translateY(-50%) translateX(${x}px)`;
   });
 };
@@ -93,6 +96,19 @@ const updateHeroSlide = () => {
   heroSlider.style.setProperty("--hero-bg", heroImages[heroIndex]);
 };
 
+let heroAutoplay;
+
+const nextHeroSlide = () => {
+  heroIndex = (heroIndex + 1) % heroImages.length;
+  updateHeroSlide();
+};
+
+const startHeroAutoplay = () => {
+  if (!heroSlider || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  window.clearInterval(heroAutoplay);
+  heroAutoplay = window.setInterval(nextHeroSlide, 5200);
+};
+
 const renderBankLogo = (column, logo) => {
   const card = document.createElement("div");
   card.className = `bank-logo-card is-entering ${logo.className || ""}`.trim();
@@ -125,12 +141,20 @@ initBankCarousel();
 heroPrev?.addEventListener("click", () => {
   heroIndex = (heroIndex - 1 + heroImages.length) % heroImages.length;
   updateHeroSlide();
+  startHeroAutoplay();
 });
 
 heroNext?.addEventListener("click", () => {
-  heroIndex = (heroIndex + 1) % heroImages.length;
-  updateHeroSlide();
+  nextHeroSlide();
+  startHeroAutoplay();
 });
+
+heroSlider?.addEventListener("mouseenter", () => window.clearInterval(heroAutoplay));
+heroSlider?.addEventListener("mouseleave", startHeroAutoplay);
+heroSlider?.addEventListener("focusin", () => window.clearInterval(heroAutoplay));
+heroSlider?.addEventListener("focusout", startHeroAutoplay);
+
+startHeroAutoplay();
 
 navToggle?.addEventListener("click", () => {
   if (!header) return;
@@ -178,19 +202,27 @@ document.addEventListener("keydown", (event) => {
   closeDropdowns();
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.16 }
-);
+const revealElements = document.querySelectorAll(".reveal");
 
-document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.documentElement.classList.add("js-ready");
+
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.1 }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
 
 document.querySelectorAll("[data-accordion]").forEach((accordion) => {
   const items = accordion.querySelectorAll(".accordion-item");

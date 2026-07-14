@@ -1,52 +1,126 @@
-export const whatsappUrl = "https://wa.me/5073752442";
-export const phone = "+507 375-2442";
+export const whatsappPhone = "+507 6996-1228";
+export const whatsappUrl = "https://wa.me/50769961228";
+export const officePhone = "+507 375-2442";
+export const officePhoneUrl = "tel:+5073752442";
 export const email = "gerencia@panamacollectors.com";
 export const address = "C. 56 D Este, Obarrio, Edificio PDC, Oficina 12K";
+
+export type Locale = "es" | "en";
 
 export const services = [
   {
     slug: "recuperacion-autos",
-    title: "Recuperacion de autos y bienes",
-    short: "Ubicacion, coordinacion, grua y custodia temporal para bienes asignados por bancos.",
-    visual: "/assets/visuals/visual-auto.svg",
-    points: ["Gestion de campo documentada", "Traslado y custodia preventiva", "Reportes de estado por caso"],
+    title: "Recuperación de autos y bienes",
+    short: "Ubicación, coordinación, grúa y custodia temporal para bienes asignados por bancos.",
+    visual: "/assets/images/recuperacion-de-autos-bancarios-panama.webp",
+    pageVisual: "/assets/images/servicio-recuperacion-autos-bienes-bancarios.webp",
+    points: ["Gestión de campo documentada", "Traslado y custodia preventiva", "Reportes de estado por caso"],
   },
   {
     slug: "actualizacion-cartera",
-    title: "Actualizacion de cartera",
-    short: "Validacion de datos, contacto y seguimiento continuo para mantener cartera accionable.",
-    visual: "/assets/visuals/visual-documents.svg",
-    points: ["Datos de contacto depurados", "Bitacora de gestiones", "Priorizacion por antiguedad y riesgo"],
+    title: "Actualización de cartera",
+    short: "Validación de datos, contacto y seguimiento continuo para mantener cartera accionable.",
+    visual: "/assets/images/actualizacion-de-cartera-bancaria-panama.webp",
+    pageVisual: "/assets/images/servicio-actualizacion-cartera-morosa.webp",
+    points: ["Datos de contacto depurados", "Bitácora de gestiones", "Priorización por antigüedad y riesgo"],
   },
   {
     slug: "investigacion-operativa",
-    title: "Investigacion operativa",
-    short: "Busqueda de informacion relevante para ubicar bienes, cuentas y escenarios de recuperacion.",
-    visual: "/assets/visuals/visual-investigation.svg",
-    points: ["Revision de datos disponibles", "Rutas de gestion por provincia", "Hallazgos listos para accion"],
+    title: "Investigación operativa",
+    short: "Búsqueda de información relevante para ubicar bienes, cuentas y escenarios de recuperación.",
+    visual: "/assets/images/investigacion-operativa-recuperacion-activos.webp",
+    pageVisual: "/assets/images/servicio-investigacion-operativa-activos.webp",
+    points: ["Revisión de datos disponibles", "Rutas de gestión por provincia", "Hallazgos listos para acción"],
   },
   {
     slug: "informes-ejecutivos",
     title: "Informes ejecutivos",
-    short: "Reportes claros para juntas, gerencias, auditorias y seguimiento interno.",
-    visual: "/assets/visuals/visual-reports.svg",
+    short: "Reportes claros para juntas, gerencias, auditorías y seguimiento interno.",
+    visual: "/assets/images/informes-ejecutivos-gestion-bancaria.webp",
+    pageVisual: "/assets/images/servicio-informes-ejecutivos-bancarios.webp",
     points: ["Indicadores por cartera", "Evidencias y trazabilidad", "Lectura ejecutiva"],
   },
   {
     slug: "tramites-vehiculares",
-    title: "Tramites vehiculares",
-    short: "Soporte operativo para procesos relacionados con bienes muebles y vehiculos.",
-    visual: "/assets/visuals/visual-operations.svg",
-    points: ["Coordinacion documental", "Seguimiento por caso", "Cierre administrativo"],
+    title: "Trámites vehiculares",
+    short: "Soporte operativo para procesos relacionados con bienes muebles y vehículos.",
+    visual: "/assets/images/operacion-de-campo-recuperacion-activos.webp",
+    pageVisual: "/assets/images/servicio-tramites-vehiculares-bancarios.webp",
+    points: ["Coordinación documental", "Seguimiento por caso", "Cierre administrativo"],
   },
   {
     slug: "centro-llamadas",
     title: "Centro de llamadas",
-    short: "Contacto, validacion y seguimiento telefonico para cartera asignada.",
-    visual: "/assets/visuals/visual-team.svg",
-    points: ["Gestion de contacto", "Registro de interacciones", "Priorizacion diaria"],
+    short: "Contacto, validación y seguimiento telefónico para cartera asignada.",
+    visual: "/assets/images/panama-collectors-equipo-corporativo.webp",
+    pageVisual: "/assets/images/servicio-centro-llamadas-cartera-bancaria.webp",
+    points: ["Gestión de contacto", "Registro de interacciones", "Priorización diaria"],
   },
 ];
+
+export const serviceTranslations = {
+  "recuperacion-autos": {
+    slug: "asset-and-vehicle-recovery",
+    title: "Asset and vehicle recovery",
+    short: "Location, coordination, towing and temporary custody for assets assigned by financial institutions.",
+    points: ["Documented field management", "Transfer and preventive custody", "Case status reports"],
+  },
+  "actualizacion-cartera": {
+    slug: "portfolio-update",
+    title: "Portfolio update",
+    short: "Data validation, contact and continuous follow-up to keep assigned portfolios actionable.",
+    points: ["Clean contact data", "Management activity log", "Prioritization by age and risk"],
+  },
+  "investigacion-operativa": {
+    slug: "operational-investigation",
+    title: "Operational investigation",
+    short: "Relevant information search to locate assets, accounts and recovery scenarios.",
+    points: ["Review of available data", "Management routes by province", "Action-ready findings"],
+  },
+  "informes-ejecutivos": {
+    slug: "executive-reports",
+    title: "Executive reports",
+    short: "Clear reports for boards, management teams, audits and internal monitoring.",
+    points: ["Portfolio indicators", "Evidence and traceability", "Executive-level reading"],
+  },
+  "tramites-vehiculares": {
+    slug: "vehicle-procedures",
+    title: "Vehicle procedures",
+    short: "Operational support for processes related to movable assets and vehicles.",
+    points: ["Document coordination", "Case follow-up", "Administrative closure"],
+  },
+  "centro-llamadas": {
+    slug: "call-center",
+    title: "Call center",
+    short: "Contact, validation and phone follow-up for assigned portfolios.",
+    points: ["Contact management", "Interaction records", "Daily prioritization"],
+  },
+} as const;
+
+export function getServices(locale: Locale = "es") {
+  if (locale === "es") return services;
+
+  return services.map((service) => {
+    const translation = serviceTranslations[service.slug as keyof typeof serviceTranslations];
+    return {
+      ...service,
+      originalSlug: service.slug,
+      slug: translation.slug,
+      title: translation.title,
+      short: translation.short,
+      points: translation.points,
+    };
+  });
+}
+
+export function getServiceBySlug(locale: Locale, slug: string) {
+  return getServices(locale).find((service) => service.slug === slug);
+}
+
+export function getSpanishServicePathFromEnglishSlug(slug: string) {
+  const pair = Object.entries(serviceTranslations).find(([, value]) => value.slug === slug);
+  return pair ? `/servicios/${pair[0]}` : "/servicios";
+}
 
 export const bankLogos = [
   ["BAC Credomatic", "/assets/banks/bac.png"],

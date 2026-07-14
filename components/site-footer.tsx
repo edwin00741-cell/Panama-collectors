@@ -1,4 +1,4 @@
-import { address, email, phone, whatsappUrl } from "@/lib/site-data";
+import { address, email, type Locale, officePhone, officePhoneUrl, whatsappPhone, whatsappUrl } from "@/lib/site-data";
 
 export function FloatingActions() {
   return (
@@ -15,7 +15,9 @@ export function FloatingActions() {
   );
 }
 
-export function SiteFooter() {
+export function SiteFooter({ locale = "es" }: { locale?: Locale }) {
+  const isEn = locale === "en";
+
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -23,39 +25,40 @@ export function SiteFooter() {
           <a className="footer-brand" href="/" aria-label="Panama Collectors inicio">
             <img className="footer-logo" src="/assets/brand/panama-collectors-logo-negative.svg" alt="Panama Collectors" />
           </a>
-          <p>Recuperacion y gestion de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento.</p>
+          <p>{isEn ? "Asset recovery and management for financial institutions, with operational focus, traceability and compliance." : "Recuperación y gestión de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento."}</p>
           <p className="footer-license">Panama Collectors S.A.</p>
-          <div className="footer-regulator">
-            <span className="footer-badge">PC</span>
-            <span>Procesos alineados a debida diligencia, confidencialidad y buenas practicas del sector bancario.</span>
-          </div>
         </div>
+
         <div className="footer-column">
-          <h2>Navegacion</h2>
-          <a href="/#servicios">Servicios</a>
-          <a href="/empresa">Empresa</a>
-          <a href="/clientes-bancarios">Bancos</a>
-          <a href="/cumplimiento">Cumplimiento</a>
+          <h2>{isEn ? "Navigation" : "Navegación"}</h2>
+          <a href={isEn ? "/en#servicios" : "/#servicios"}>{isEn ? "Services" : "Servicios"}</a>
+          <a href={isEn ? "/en/company" : "/empresa"}>{isEn ? "Company" : "Empresa"}</a>
+          <a href={isEn ? "/en/banking-clients" : "/clientes-bancarios"}>{isEn ? "Banks" : "Bancos"}</a>
+          <a href={isEn ? "/en/compliance" : "/cumplimiento"}>{isEn ? "Compliance" : "Cumplimiento"}</a>
         </div>
+
         <div className="footer-column">
-          <h2>Informacion</h2>
-          <a href="/servicios">Todos los servicios</a>
-          <a href="/privacidad">Privacidad</a>
-          <a href="/#contacto">Cotizar</a>
-          <a href="/#bancos">Clientes bancarios</a>
+          <h2>{isEn ? "Information" : "Información"}</h2>
+          <a href={isEn ? "/en/services" : "/servicios"}>{isEn ? "All services" : "Todos los servicios"}</a>
+          <a href={isEn ? "/en/privacy" : "/privacidad"}>{isEn ? "Privacy" : "Privacidad"}</a>
+          <a href={isEn ? "/en#contacto" : "/#contacto"}>{isEn ? "Request quote" : "Cotizar"}</a>
+          <a href={isEn ? "/en#bancos" : "/#bancos"}>{isEn ? "Banking clients" : "Clientes bancarios"}</a>
         </div>
+
         <div className="footer-column footer-contact">
-          <h2>Contacto</h2>
-          <a href={whatsappUrl}>WhatsApp: {phone}</a>
+          <h2>{isEn ? "Contact" : "Contacto"}</h2>
+          <a href={whatsappUrl}>WhatsApp: {whatsappPhone}</a>
+          <a href={officePhoneUrl}>Oficina: {officePhone}</a>
           <a href={`mailto:${email}`}>{email}</a>
           <span>{address}</span>
-          <span>Panama, Republica de Panama</span>
+          <span>{isEn ? "Panama, Republic of Panama" : "Panamá, República de Panamá"}</span>
         </div>
       </div>
+
       <div className="footer-bottom">
-        <span>La informacion, reportes y condiciones finales dependen de evaluacion y autorizacion de cada entidad financiera.</span>
+        <span>{isEn ? "Final information, reports and conditions depend on evaluation and authorization by each financial institution." : "La información, reportes y condiciones finales dependen de evaluación y autorización de cada entidad financiera."}</span>
         <span>
-          © 2026 Panama Collectors S.A. Todos los derechos reservados.{" "}
+          © 2026 Panama Collectors S.A. {isEn ? "All rights reserved." : "Todos los derechos reservados."}{" "}
           <a href="https://www.harmonyagency.lat/" target="_blank" rel="noreferrer">
             Creado por Harmony Agency
           </a>

@@ -2,9 +2,34 @@ import { ContentPage } from "@/components/content-page";
 
 export default function CumplimientoPage() {
   return (
-    <ContentPage eyebrow="Cumplimiento" title="Seguridad y debida diligencia" intro="Procesos orientados a confidencialidad, proteccion de datos y buenas practicas del sector bancario.">
-      <article className="content-card"><h2>Seguridad de informacion</h2><p>Proceso encaminado hacia certificacion ISO 27001 en seguridad de la informacion.</p></article>
-      <article className="content-card"><h2>Practicas bancarias</h2><ul><li>Proteccion de datos y confidencialidad.</li><li>Actualizacion corporativa anual.</li><li>Validacion de personal e inspecciones bancarias.</li><li>Aval correspondiente ante la Superintendencia de Bancos al formalizar contratos.</li></ul></article>
+    <ContentPage
+      switchHref="/en/compliance"
+      eyebrow="Cumplimiento"
+      title="Seguridad y debida diligencia"
+      intro="Procesos orientados a confidencialidad, protección de datos y buenas prácticas del sector bancario."
+      heroImage="/assets/images/control-documental-cartera-bancaria.webp"
+      imageAlt="Control documental y cumplimiento operativo"
+    >
+      <section className="article-section">
+        <h2>Seguridad de información</h2>
+        <p>Panama Collectors mantiene un proceso encaminado hacia la certificación ISO 27001 en seguridad de la información, con enfoque en protección de datos, confidencialidad y control documental.</p>
+      </section>
+
+      <section className="article-section">
+        <h2>Prácticas bancarias</h2>
+        <ul>
+          <li>Protección de datos y confidencialidad.</li>
+          <li>Actualización corporativa anual.</li>
+          <li>Validación de personal e inspecciones bancarias.</li>
+          <li>Aval correspondiente ante la Superintendencia de Bancos al formalizar contratos.</li>
+        </ul>
+      </section>
+
+      <section className="article-image-grid">
+        <img src="/assets/images/informes-ejecutivos-gestion-bancaria.webp" alt="Informes ejecutivos de gestión bancaria" />
+        <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Reporte ejecutivo de cierre de casos" />
+        <img src="/assets/images/planeacion-operativa-recuperacion-activos.webp" alt="Planeación operativa y seguridad" />
+      </section>
     </ContentPage>
   );
 }

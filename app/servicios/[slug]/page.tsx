@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { FloatingActions, SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { services, whatsappUrl } from "@/lib/site-data";
+import { serviceTranslations, services, whatsappUrl } from "@/lib/site-data";
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
@@ -14,27 +14,60 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      <SiteHeader />
-      <main>
-        <section className="service-hero">
-          <div>
-            <p className="eyebrow">Servicio especializado</p>
+      <SiteHeader switchHref={`/en/services/${serviceTranslations[service.slug as keyof typeof serviceTranslations].slug}`} />
+      <main className="article-page">
+        <article className="article-shell">
+          <header className="article-header">
+            <p className="article-kicker">Servicio especializado</p>
             <h1>{service.title}</h1>
-            <p>{service.short}</p>
-            <div className="hero-actions">
-              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img src="/assets/whatsapp.png" alt="" /> WhatsApp</a>
-              <a className="btn btn-secondary" href="/#contacto">Formulario</a>
+            <div className="article-meta">
+              <span>Panama Collectors S.A.</span>
+              <span>Operación bancaria</span>
             </div>
+          </header>
+
+          <figure className="article-hero-image">
+            <img src={service.pageVisual} alt={service.title} />
+          </figure>
+
+          <section className="article-lead">
+            <p>{service.short}</p>
+          </section>
+
+          <div className="article-content">
+            <section className="article-section">
+              <h2>Alcance del servicio</h2>
+              <p>{service.short} El objetivo es entregar información clara, seguimiento documentado y soporte operativo según las reglas de cada entidad financiera.</p>
+            </section>
+
+            <section className="article-section">
+              <h2>Proceso operativo</h2>
+              <ul>{service.points.map((point) => <li key={point}>{point}</li>)}</ul>
+            </section>
+
+            <section className="article-image-grid">
+              <img src={service.visual} alt={`Operación de ${service.title}`} />
+              <img src="/assets/images/control-documental-cartera-bancaria.webp" alt="Control documental bancario" />
+              <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Reporte ejecutivo de cierre" />
+            </section>
           </div>
-          <div className="service-page-media"><img src={service.visual} alt={service.title} /></div>
-        </section>
-        <section className="section">
-          <div className="detail-grid">
-            <article className="content-card"><h2>Alcance</h2><p>{service.short}</p></article>
-            <article className="content-card"><h2>Proceso</h2><ul>{service.points.map((point) => <li key={point}>{point}</li>)}</ul></article>
-            <article className="content-card"><h2>Contacto</h2><p>Conversemos por WhatsApp o formulario para validar alcance, cartera, cobertura y tiempos.</p><a className="btn btn-primary" href={whatsappUrl}>Solicitar informacion</a></article>
-          </div>
-        </section>
+
+          <aside className="article-quote">
+            <p>Una gestión efectiva requiere coordinación de campo, documentación confiable y reportes que permitan tomar decisiones con rapidez.</p>
+            <span>Panama Collectors S.A.</span>
+          </aside>
+
+          <footer className="article-cta">
+            <div>
+              <p className="article-kicker">Solicitud de alcance</p>
+              <h2>Validemos volumen de casos, cobertura y tiempos de respuesta.</h2>
+            </div>
+            <div className="article-actions">
+              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img src="/assets/whatsapp.png" alt="" /> Consultar por WhatsApp</a>
+              <a className="btn btn-secondary" href="/#contacto">Enviar solicitud</a>
+            </div>
+          </footer>
+        </article>
       </main>
       <FloatingActions />
       <SiteFooter />
