@@ -1,0 +1,16 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+  <path d="M0 0h1400v900H0z" fill="url(#g)"/>
+  <rect x="260" y="120" width="690" height="650" rx="30" fill="#F7F7F5" stroke="#E1E1DF" stroke-width="4"/>
+  <rect x="350" y="230" width="510" height="34" rx="17" fill="#1F2328"/>
+  <rect x="350" y="320" width="430" height="22" rx="11" fill="#71706F" fill-opacity=".45"/>
+  <rect x="350" y="375" width="500" height="22" rx="11" fill="#71706F" fill-opacity=".28"/>
+  <rect x="350" y="430" width="380" height="22" rx="11" fill="#71706F" fill-opacity=".28"/>
+  <rect x="350" y="540" width="180" height="92" rx="18" fill="#EA6A1C"/>
+  <rect x="570" y="540" width="280" height="92" rx="18" fill="#1F2328"/>
+  <rect x="760" y="210" width="380" height="520" rx="28" fill="#FFFFFF" stroke="#E1E1DF" stroke-width="4"/>
+  <path d="M830 335h240M830 405h190M830 475h260M830 545h160" stroke="#71706F" stroke-width="22" stroke-linecap="round" opacity=".45"/>
+  <circle cx="1048" cy="622" r="58" fill="#EA6A1C"/>
+  <text x="700" y="830" fill="#1F2328" fill-opacity=".08" font-family="Arial" font-size="130" font-weight="800" text-anchor="middle">PANAMA COLLECTORS</text>
+  <defs><linearGradient id="g" x1="0" x2="1400" y1="0" y2="900"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f7f5"/></linearGradient></defs>
+</svg>

@@ -11,10 +11,11 @@
   <body>
     <header class="pc-header" data-header>
       <nav class="pc-nav" aria-label="Navegacion principal">
-        <a class="pc-brand" href="../index.html" aria-label="Panama Collectors inicio"><img src="../assets/panama-collectors-isotipo.svg" alt="Panama Collectors" /><span>panama<span>collectors</span></span></a>
+        <a class="pc-brand" href="../index.html" aria-label="Panama Collectors inicio"><img src="assets/brand/panama-collectors-logo-positive.svg" alt="Panama Collectors" /></a>
         <button class="pc-menu" type="button" aria-label="Abrir menu" data-nav-toggle><span></span><span></span></button>
         <div class="pc-links" data-nav-menu>
           <a href="../index.html">Inicio</a>
+          <div class="nav-dropdown"><button type="button" aria-expanded="false" data-dropdown-toggle>Empresa</button><div class="dropdown-panel"><a href="../empresa.html">Rese?a historica</a><a href="../cumplimiento.html">Cumplimiento</a><a href="../clientes-bancarios.html">Clientes bancarios</a></div></div>
           <div class="nav-dropdown">
             <button type="button" aria-expanded="false" data-dropdown-toggle>Servicios</button>
             <div class="dropdown-panel">
@@ -27,7 +28,7 @@
               <a href="centro-llamadas.html">Centro de llamadas</a>
             </div>
           </div>
-          <a href="../index.html#bancos">Bancos</a>
+          <a href="../clientes-bancarios.html">Bancos</a><a href="../privacidad.html">Privacidad</a>
           <a href="#contacto">Contacto</a>
           <a class="nav-cta" href="https://wa.me/5073752442"><img src="../assets/whatsapp.png" alt="" /> WhatsApp</a>
         </div>
@@ -37,18 +38,18 @@
     <main>
       <section class="overview-hero">
         <div class="overview-title reveal">
-          <p class="eyebrow">Home / Our Services</p>
-          <h1>Our Services</h1>
+          <p class="eyebrow">Inicio / Servicios</p>
+          <h1>Servicios</h1>
         </div>
         <div class="overview-image reveal">
-          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1500&q=82" alt="Equipo financiero reunido" />
+          <img src="/assets/visuals/visual-team.svg" alt="Equipo financiero reunido" />
         </div>
       </section>
 
       <section class="section">
         <div class="service-overview-grid">
           <a class="overview-card reveal" href="recuperacion-autos.html">
-            <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=900&q=80" alt="Recuperacion de autos" />
+            <img src="/assets/visuals/visual-auto.svg" alt="Recuperacion de autos" />
             <div class="overview-card-body">
               <span class="overview-icon icon-car" aria-hidden="true"></span>
               <h3>Recuperacion de autos</h3>
@@ -56,7 +57,7 @@
             </div>
           </a>
           <a class="overview-card reveal" href="actualizacion-cartera.html">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="Actualizacion de cartera" />
+            <img src="/assets/visuals/visual-documents.svg" alt="Actualizacion de cartera" />
             <div class="overview-card-body">
               <span class="overview-icon icon-database" aria-hidden="true"></span>
               <h3>Actualizacion de cartera</h3>
@@ -64,7 +65,7 @@
             </div>
           </a>
           <a class="overview-card reveal" href="investigacion-operativa.html">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80" alt="Investigacion operativa" />
+            <img src="/assets/visuals/visual-investigation.svg" alt="Investigacion operativa" />
             <div class="overview-card-body">
               <span class="overview-icon icon-search" aria-hidden="true"></span>
               <h3>Investigacion operativa</h3>
@@ -72,7 +73,7 @@
             </div>
           </a>
           <a class="overview-card reveal" href="informes-ejecutivos.html">
-            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80" alt="Informes ejecutivos" />
+            <img src="/assets/visuals/visual-documents.svg" alt="Informes ejecutivos" />
             <div class="overview-card-body">
               <span class="overview-icon icon-report" aria-hidden="true"></span>
               <h3>Informes ejecutivos</h3>
@@ -80,7 +81,7 @@
             </div>
           </a>
           <a class="overview-card reveal" href="tramites-vehiculares.html">
-            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80" alt="Tramites vehiculares" />
+            <img src="/assets/visuals/visual-auto.svg" alt="Tramites vehiculares" />
             <div class="overview-card-body">
               <span class="overview-icon icon-file" aria-hidden="true"></span>
               <h3>Tramites vehiculares</h3>
@@ -88,7 +89,7 @@
             </div>
           </a>
           <a class="overview-card reveal" href="centro-llamadas.html">
-            <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=900&q=80" alt="Centro de llamadas" />
+            <img src="/assets/visuals/visual-operations.svg" alt="Centro de llamadas" />
             <div class="overview-card-body">
               <span class="overview-icon icon-headset" aria-hidden="true"></span>
               <h3>Centro de llamadas</h3>
@@ -99,21 +100,21 @@
 
         <div class="quote-strip reveal">
           <div>
-            <h2>Get Free Quote</h2>
-            <p>Perfect solution for your company.</p>
+            <h2>Solicitar propuesta</h2>
+            <p>Soluci?n operativa para su entidad.</p>
           </div>
           <form class="quote-inline" data-contact-form>
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email Address" />
-            <button type="submit">Get Quote</button>
+            <input type="text" placeholder="Nombre completo" />
+            <input type="email" placeholder="Correo electr?nico" />
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </section>
 
       <section class="section services-section reveal">
         <div class="section-heading">
-          <p class="eyebrow">Advance solutions</p>
-          <h2>We Help For Planning</h2>
+          <p class="eyebrow">Soluciones avanzadas</p>
+          <h2>Planificaci?n operativa</h2>
           <p>Seleccionamos el equipo, ruta y reporte segun volumen, prioridad y tipo de cartera.</p>
         </div>
         <div class="detail-grid">
@@ -145,10 +146,49 @@
 
     <a class="floating-whatsapp" href="https://wa.me/5073752442" aria-label="Contactar por WhatsApp"><img src="../assets/whatsapp.png" alt="" /></a>
     <button class="back-top" type="button" aria-label="Volver arriba" data-back-top><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.5 15.75 12 8.25l7.5 7.5" /></svg></button>
-    <footer class="site-footer"><img src="../assets/panama-collectors-logo-cropped.webp" alt="Panama Collectors" /><span>2026 Panama Collectors.</span></footer>
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="../index.html" aria-label="Panama Collectors inicio"><img class="footer-logo" src="../assets/brand/panama-collectors-logo-negative.svg" alt="Panama Collectors" /></a>
+      <p>Recuperacion y gestion de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento.</p>
+      <p class="footer-license">Panama Collectors S.A.</p>
+      <div class="footer-regulator"><span class="footer-badge">PC</span><span>Procesos alineados a debida diligencia, confidencialidad y buenas practicas del sector bancario.</span></div>
+    </div>
+    <div class="footer-column">
+      <h2>Navegacion</h2>
+      <a href="../index.html#servicios">Servicios</a>
+      <a href="../empresa.html">Empresa</a>
+      <a href="../clientes-bancarios.html">Bancos</a>
+      <a href="../cumplimiento.html">Cumplimiento</a>
+    </div>
+    <div class="footer-column">
+      <h2>Informacion</h2>
+      <a href="index.html">Todos los servicios</a>
+      <a href="../privacidad.html">Privacidad</a>
+      <a href="../index.html#contacto">Cotizar</a>
+      <a href="../index.html#bancos">Clientes bancarios</a>
+    </div>
+    <div class="footer-column footer-contact">
+      <h2>Contacto</h2>
+      <a href="https://wa.me/5073752442">WhatsApp: +507 375-2442</a>
+      <a href="mailto:gerencia@panamacollectors.com">gerencia@panamacollectors.com</a>
+      <span>C. 56 D Este, Obarrio, Edificio PDC, Oficina 12K</span>
+      <span>Panama, Republica de Panama</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>La informacion, reportes y condiciones finales dependen de evaluacion y autorizacion de cada entidad financiera.</span>
+    <span>© 2026 Panama Collectors S.A. Todos los derechos reservados. <a href="https://www.harmonyagency.lat/" target="_blank" rel="noreferrer">Creado por Harmony Agency</a></span>
+  </div>
+</footer>
     <script src="../script.js"></script>
   </body>
 </html>
+
+
+
+
+
 
 
 

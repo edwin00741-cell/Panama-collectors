@@ -1,0 +1,12 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1400" height="900" fill="url(#g)"/>
+  <circle cx="420" cy="350" r="110" fill="#EA6A1C"/>
+  <circle cx="700" cy="320" r="125" fill="#1F2328"/>
+  <circle cx="980" cy="350" r="110" fill="#B0B0B0"/>
+  <path d="M250 720c22-152 118-226 246-226s223 74 246 226H250Z" fill="#1F2328"/>
+  <path d="M558 720c22-164 132-250 286-250s263 86 286 250H558Z" fill="#EA6A1C"/>
+  <path d="M780 720c22-152 118-226 246-226s223 74 246 226H780Z" fill="#71706F"/>
+  <text x="700" y="150" fill="#1F2328" fill-opacity=".09" font-family="Arial" font-size="120" font-weight="800" text-anchor="middle">EQUIPO PC</text>
+  <defs><linearGradient id="g" x1="0" x2="1400" y1="0" y2="900"><stop stop-color="#fff"/><stop offset="1" stop-color="#f7f7f5"/></linearGradient></defs>
+</svg>

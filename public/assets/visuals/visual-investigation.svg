@@ -1,0 +1,10 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#1F2328"/>
+  <path d="M220 190h960v520H220z" fill="#F7F7F5"/>
+  <path d="M220 190h960v110H220z" fill="#EA6A1C"/>
+  <circle cx="510" cy="520" r="130" fill="#fff" stroke="#1F2328" stroke-width="28"/>
+  <path d="m610 620 150 150" stroke="#1F2328" stroke-width="38" stroke-linecap="round"/>
+  <path d="M800 420h240M800 500h190M800 580h260" stroke="#71706F" stroke-width="28" stroke-linecap="round" opacity=".55"/>
+  <path d="M315 245h50M405 245h50M495 245h50" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+  <text x="700" y="120" fill="white" fill-opacity=".13" font-family="Arial" font-size="120" font-weight="800" text-anchor="middle">INVESTIGACION</text>
+</svg>

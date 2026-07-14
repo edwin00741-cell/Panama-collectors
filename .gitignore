@@ -1,6 +1,10 @@
 .codex-static-server.js
 .vercel/
 node_modules/
+.next/
+out/
+output/
 *.log
+tmp/
 
 .vercel
