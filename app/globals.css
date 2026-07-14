@@ -2770,6 +2770,94 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   transform: none;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: pc-page-out 220ms cubic-bezier(.4, 0, .2, 1) both;
+}
+
+::view-transition-new(root) {
+  animation: pc-page-in 520ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+@keyframes pc-page-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+
+  to {
+    opacity: .42;
+    transform: translateY(-10px) scale(.992);
+    filter: blur(6px);
+  }
+}
+
+@keyframes pc-page-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(.992);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main,
+  .article-page {
+    animation: pc-route-enter 680ms cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  .article-header,
+  .article-hero-image,
+  .article-lead,
+  .service-directory-hero,
+  .service-directory-grid {
+    animation: pc-content-rise 720ms cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  .article-hero-image,
+  .service-directory-grid {
+    animation-delay: 90ms;
+  }
+
+  .article-lead {
+    animation-delay: 160ms;
+  }
+}
+
+@keyframes pc-route-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pc-content-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 760px) {
   html,
   body {
