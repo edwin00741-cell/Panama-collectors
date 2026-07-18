@@ -21,3 +21,6 @@ tmp/
 /xtra-salud-email-reference.png
 /tools/
 /.agents/
+
+.vercel
+.env*
