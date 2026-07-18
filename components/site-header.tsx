@@ -151,16 +151,16 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
             </span>
           </summary>
 
-          <div className="fixed inset-x-0 top-20 z-40 max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-black/5 bg-white/98 px-5 pb-8 pt-4 shadow-[0_28px_70px_rgba(31,35,40,0.10)] backdrop-blur-2xl">
+          <div className="fixed right-0 top-20 z-40 max-h-[calc(100vh-5rem)] w-[78vw] max-w-[360px] overflow-y-auto rounded-bl-[24px] border-b border-l border-black/5 bg-white/98 px-5 pb-7 pt-3 shadow-[-18px_28px_70px_rgba(31,35,40,0.14)] backdrop-blur-2xl">
             <div className="mx-auto max-w-lg divide-y divide-black/10">
               {simpleLinks.map((link) => (
-                <a className="block py-5 text-3xl font-semibold tracking-[-0.05em] text-[#1f2328]" href={link.href} key={link.href}>
+                <a className="block py-3.5 text-xl font-semibold text-[#1f2328]" href={link.href} key={link.href}>
                   {link.label}
                 </a>
               ))}
 
               <details>
-                <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-3xl font-semibold tracking-[-0.05em] text-[#1f2328] marker:hidden [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3.5 text-xl font-semibold text-[#1f2328] marker:hidden [&::-webkit-details-marker]:hidden">
                   {isEn ? "Company" : "Empresa"}
                   <ChevronDown className="h-6 w-6" strokeWidth={1.7} />
                 </summary>
@@ -174,7 +174,7 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
               </details>
 
               <details>
-                <summary className="flex cursor-pointer list-none items-center justify-between py-5 text-3xl font-semibold tracking-[-0.05em] text-[#1f2328] marker:hidden [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3.5 text-xl font-semibold text-[#1f2328] marker:hidden [&::-webkit-details-marker]:hidden">
                   {isEn ? "Services" : "Servicios"}
                   <ChevronDown className="h-6 w-6" strokeWidth={1.7} />
                 </summary>

@@ -47,8 +47,8 @@ export default async function EnglishServicePage({ params }: { params: Promise<{
 
             <section className="article-image-grid">
               <img src={service.visual} alt={`Operation for ${service.title}`} />
-              <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Banking document control" />
-              <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Executive closure report" />
+              <img src={service.supportVisuals[0]} alt="Banking document control" />
+              <img src={service.supportVisuals[1]} alt="Executive closure report" />
             </section>
           </div>
 

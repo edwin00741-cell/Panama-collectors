@@ -8,7 +8,7 @@ export default function ClientesBancariosPage() {
       eyebrow="Clientes bancarios"
       title="Bancos con los cuales hemos trabajado"
       intro="Experiencia operativa con entidades financieras del mercado panameño, aportando recuperación de activos, seguimiento de cartera y soporte documentado."
-      heroImage="/assets/images/generated/panama-collectors-equipo-corporativo.png"
+      heroImage="/assets/images/generated/informes-ejecutivos-bancarios.png"
       imageAlt="Reunión corporativa con entidades financieras"
     >
       <section className="article-section">

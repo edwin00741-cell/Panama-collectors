@@ -17,7 +17,7 @@ export function ContentPage({
   eyebrow,
   title,
   intro,
-  heroImage = "/assets/images/generated/panama-collectors-equipo-corporativo.png",
+  heroImage = "/assets/images/generated/panama-collectors-hero-operacion-bancaria.png",
   imageAlt = "Operación corporativa Panama Collectors",
   locale = "es",
   switchHref,

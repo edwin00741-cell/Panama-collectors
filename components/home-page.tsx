@@ -8,11 +8,6 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
     ? ["Asset recovery", "Portfolio management", "Operational investigation", "Executive reporting"]
     : ["Recuperación de activos", "Gestión de cartera", "Investigación operativa", "Informes ejecutivos"];
   const serviceBase = isEn ? "/en/services" : "/servicios";
-  const serviceSupportImages = [
-    "/assets/images/generated/tramites-vehiculares-bancarios.png",
-    "/assets/images/generated/actualizacion-cartera-bancaria.png",
-    "/assets/images/generated/investigacion-operativa-activos.png",
-  ];
 
   return (
     <main>
@@ -108,7 +103,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
                 <div className={`media-track ${index === 1 ? "vertical" : "horizontal"}`}>
                   <img src={service.visual} alt={service.title} />
                   <img src={service.pageVisual} alt={`Detalle de ${service.title}`} />
-                  <img src={serviceSupportImages[index]} alt={`Soporte operativo para ${service.title}`} />
+                  <img src={service.supportVisuals[0]} alt={`Soporte operativo para ${service.title}`} />
                 </div>
               </div>
             </article>
@@ -160,7 +155,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
             <p className="eyebrow">{isEn ? "Banking experience" : "Experiencia bancaria"}</p>
             <h2>{isEn ? "Banks we have worked with." : "Bancos con los cuales hemos trabajado."}</h2>
             <p>{isEn ? "Panama Collectors has collaborated with recognized financial institutions, providing recovery management, follow-up and operational support." : "Panama Collectors ha colaborado con entidades reconocidas del mercado financiero, aportando gestión de recuperación, seguimiento y soporte operativo."}</p>
-            <img className="banks-context-image" src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Experiencia bancaria Panama Collectors" />
+            <img className="banks-context-image" src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Experiencia bancaria Panama Collectors" />
             <div className="banks-highlights"><span>{isEn ? "Asset recovery" : "Recuperación de activos"}</span><span>{isEn ? "Portfolio management" : "Gestión de cartera"}</span><span>{isEn ? "Executive reports" : "Reportes ejecutivos"}</span></div>
           </div>
           <div className="bank-logo-carousel" data-bank-carousel aria-label="Bancos con los cuales hemos trabajado">
@@ -177,7 +172,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
           {[
             [isEn ? "Field operation" : "Campo operativo", "/assets/images/generated/tramites-vehiculares-bancarios.png", isEn ? "Asset recovery and management with traceability for banking institutions." : "Recuperación y gestión de activos con trazabilidad para entidades bancarias."],
             [isEn ? "Document control" : "Control documental", "/assets/images/generated/cumplimiento-documental-bancario.png", isEn ? "Organized information for decisions, follow-up and case closure." : "Información organizada para tomar decisiones, dar seguimiento y cerrar casos."],
-            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/generated/panama-collectors-equipo-corporativo.png", isEn ? "A coordinated team for portfolios, reports and client management." : "Un equipo coordinado para atender carteras, reportes y gestión de clientes."],
+            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/generated/centro-llamadas-cartera.png", isEn ? "A coordinated team for portfolios, reports and client management." : "Un equipo coordinado para atender carteras, reportes y gestión de clientes."],
           ].map(([label, visual, quote]) => (
             <article className="proof-card reveal" key={label}><img src={visual} alt={label} /><div className="proof-overlay"><span className="quote-mark" aria-hidden="true">"</span><blockquote>{quote}</blockquote><p>{label}</p></div></article>
           ))}

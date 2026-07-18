@@ -8,10 +8,10 @@ const heroSlider = document.querySelector("[data-hero-slider]");
 const heroPrev = document.querySelector("[data-hero-prev]");
 const heroNext = document.querySelector("[data-hero-next]");
 const heroImages = [
-  "url('/assets/images/panama-collectors-recuperacion-bancaria-control-operativo-hero.webp')",
-  "url('/assets/images/planeacion-operativa-recuperacion-activos.webp')",
-  "url('/assets/images/gestion-integral-recuperacion-y-cobros.webp')",
-  "url('/assets/images/experiencia-bancaria-panama-collectors.webp')"
+  "url('/assets/images/generated/panama-collectors-hero-operacion-bancaria.png')",
+  "url('/assets/images/generated/investigacion-operativa-activos.png')",
+  "url('/assets/images/generated/panama-collectors-equipo-corporativo.png')",
+  "url('/assets/images/generated/informes-ejecutivos-bancarios.png')"
 ];
 const bankLogos = [
   { name: "BAC Credomatic", src: "/assets/banks/bac.png" },
@@ -49,7 +49,7 @@ const updateServiceTracks = () => {
 
     if (track.classList.contains("vertical")) {
       const overflow = Math.max(track.scrollHeight - media.clientHeight, 0);
-      const maxShift = Math.min(overflow, 170);
+      const maxShift = Math.min(overflow, 280);
       const y = (0.5 - progress) * maxShift;
       track.style.transform = `translate(-50%, -50%) translateY(${y}px)`;
       return;

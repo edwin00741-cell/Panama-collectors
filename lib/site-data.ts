@@ -13,7 +13,8 @@ export const services = [
     title: "Recuperación de autos y bienes",
     short: "Ubicación, coordinación, grúa y custodia temporal para bienes asignados por bancos.",
     visual: "/assets/images/generated/recuperacion-autos-bienes-bancarios.png",
-    pageVisual: "/assets/images/generated/recuperacion-autos-bienes-bancarios.png",
+    pageVisual: "/assets/images/generated/recuperacion-autos-bienes-bancarios-detalle.png",
+    supportVisuals: ["/assets/images/generated/tramites-vehiculares-bancarios.png", "/assets/images/generated/investigacion-operativa-activos.png"],
     points: ["Gestión de campo documentada", "Traslado y custodia preventiva", "Reportes de estado por caso"],
   },
   {
@@ -21,7 +22,8 @@ export const services = [
     title: "Actualización de cartera",
     short: "Validación de datos, contacto y seguimiento continuo para mantener cartera accionable.",
     visual: "/assets/images/generated/actualizacion-cartera-bancaria.png",
-    pageVisual: "/assets/images/generated/actualizacion-cartera-bancaria.png",
+    pageVisual: "/assets/images/generated/actualizacion-cartera-bancaria-detalle.png",
+    supportVisuals: ["/assets/images/generated/informes-ejecutivos-bancarios.png", "/assets/images/generated/centro-llamadas-cartera.png"],
     points: ["Datos de contacto depurados", "Bitácora de gestiones", "Priorización por antigüedad y riesgo"],
   },
   {
@@ -29,7 +31,8 @@ export const services = [
     title: "Investigación operativa",
     short: "Búsqueda de información relevante para ubicar bienes, cuentas y escenarios de recuperación.",
     visual: "/assets/images/generated/investigacion-operativa-activos.png",
-    pageVisual: "/assets/images/generated/investigacion-operativa-activos.png",
+    pageVisual: "/assets/images/generated/investigacion-operativa-activos-detalle.png",
+    supportVisuals: ["/assets/images/generated/panama-collectors-equipo-corporativo.png", "/assets/images/generated/cumplimiento-documental-bancario.png"],
     points: ["Revisión de datos disponibles", "Rutas de gestión por provincia", "Hallazgos listos para acción"],
   },
   {
@@ -37,7 +40,8 @@ export const services = [
     title: "Informes ejecutivos",
     short: "Reportes claros para juntas, gerencias, auditorías y seguimiento interno.",
     visual: "/assets/images/generated/informes-ejecutivos-bancarios.png",
-    pageVisual: "/assets/images/generated/informes-ejecutivos-bancarios.png",
+    pageVisual: "/assets/images/generated/informes-ejecutivos-bancarios-detalle.png",
+    supportVisuals: ["/assets/images/generated/cumplimiento-documental-bancario.png", "/assets/images/generated/panama-collectors-equipo-corporativo.png"],
     points: ["Indicadores por cartera", "Evidencias y trazabilidad", "Lectura ejecutiva"],
   },
   {
@@ -45,7 +49,8 @@ export const services = [
     title: "Trámites vehiculares",
     short: "Soporte operativo para procesos relacionados con bienes muebles y vehículos.",
     visual: "/assets/images/generated/tramites-vehiculares-bancarios.png",
-    pageVisual: "/assets/images/generated/tramites-vehiculares-bancarios.png",
+    pageVisual: "/assets/images/generated/tramites-vehiculares-bancarios-detalle.png",
+    supportVisuals: ["/assets/images/generated/recuperacion-autos-bienes-bancarios.png", "/assets/images/generated/centro-llamadas-cartera.png"],
     points: ["Coordinación documental", "Seguimiento por caso", "Cierre administrativo"],
   },
   {
@@ -53,7 +58,8 @@ export const services = [
     title: "Centro de llamadas",
     short: "Contacto, validación y seguimiento telefónico para cartera asignada.",
     visual: "/assets/images/generated/centro-llamadas-cartera.png",
-    pageVisual: "/assets/images/generated/centro-llamadas-cartera.png",
+    pageVisual: "/assets/images/generated/centro-llamadas-cartera-detalle.png",
+    supportVisuals: ["/assets/images/generated/actualizacion-cartera-bancaria.png", "/assets/images/generated/informes-ejecutivos-bancarios.png"],
     points: ["Gestión de contacto", "Registro de interacciones", "Priorización diaria"],
   },
 ];

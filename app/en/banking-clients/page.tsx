@@ -9,7 +9,7 @@ export default function EnglishBankingClientsPage() {
       eyebrow="Banking clients"
       title="Banks we have worked with"
       intro="Operational experience with financial institutions in the Panamanian market, providing asset recovery, portfolio follow-up and documented support."
-      heroImage="/assets/images/generated/panama-collectors-equipo-corporativo.png"
+      heroImage="/assets/images/generated/informes-ejecutivos-bancarios.png"
       imageAlt="Corporate meeting with financial institutions"
     >
       <section className="article-section">
