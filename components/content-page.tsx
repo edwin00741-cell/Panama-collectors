@@ -17,7 +17,7 @@ export function ContentPage({
   eyebrow,
   title,
   intro,
-  heroImage = "/assets/images/planeacion-operativa-recuperacion-activos.webp",
+  heroImage = "/assets/images/generated/panama-collectors-equipo-corporativo.png",
   imageAlt = "Operación corporativa Panama Collectors",
   locale = "es",
   switchHref,

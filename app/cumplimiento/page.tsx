@@ -7,7 +7,7 @@ export default function CumplimientoPage() {
       eyebrow="Cumplimiento"
       title="Seguridad y debida diligencia"
       intro="Procesos orientados a confidencialidad, protección de datos y buenas prácticas del sector bancario."
-      heroImage="/assets/images/control-documental-cartera-bancaria.webp"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
       imageAlt="Control documental y cumplimiento operativo"
     >
       <section className="article-section">
@@ -26,9 +26,9 @@ export default function CumplimientoPage() {
       </section>
 
       <section className="article-image-grid">
-        <img src="/assets/images/informes-ejecutivos-gestion-bancaria.webp" alt="Informes ejecutivos de gestión bancaria" />
-        <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Reporte ejecutivo de cierre de casos" />
-        <img src="/assets/images/planeacion-operativa-recuperacion-activos.webp" alt="Planeación operativa y seguridad" />
+        <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Informes ejecutivos de gestión bancaria" />
+        <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Reporte ejecutivo de cierre de casos" />
+        <img src="/assets/images/generated/investigacion-operativa-activos.png" alt="Planeación operativa y seguridad" />
       </section>
     </ContentPage>
   );

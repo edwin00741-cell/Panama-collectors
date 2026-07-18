@@ -8,7 +8,7 @@ export default function EnglishPrivacyPage() {
       eyebrow="Privacy"
       title="Privacy policy"
       intro="Responsible handling of information received through digital media, forms and Panama Collectors S.A. contact channels."
-      heroImage="/assets/images/gestion-documental-bancaria-panama-collectors.webp"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
       imageAlt="Document management and information privacy"
     >
       <section className="article-section">

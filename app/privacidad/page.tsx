@@ -7,7 +7,7 @@ export default function PrivacidadPage() {
       eyebrow="Privacidad"
       title="Política de privacidad"
       intro="Tratamiento responsable de información recibida por medios digitales, formularios y canales de contacto de Panama Collectors S.A."
-      heroImage="/assets/images/gestion-documental-bancaria-panama-collectors.webp"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
       imageAlt="Gestión documental y privacidad de información"
     >
       <section className="article-section">

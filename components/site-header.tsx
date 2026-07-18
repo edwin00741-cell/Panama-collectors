@@ -111,9 +111,9 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-2xl">
-      <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Navegación principal">
+      <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Navegación principal">
         <a className="flex min-w-0 items-center" href="/" aria-label="Panama Collectors inicio">
-          <img className="h-11 w-[196px] object-contain object-left md:h-10 md:w-[188px]" src="/assets/brand/panama-collectors-logo-positive-transparent.svg" alt="Panama Collectors" />
+          <img className="h-[62px] w-[235px] object-contain object-left md:h-[68px] md:w-[310px]" src="/assets/brand/panama-collectors-logo-positive-transparent.svg" alt="Panama Collectors" />
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -151,7 +151,7 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
             </span>
           </summary>
 
-          <div className="fixed inset-x-0 top-16 z-40 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-black/5 bg-white/98 px-5 pb-8 pt-4 shadow-[0_28px_70px_rgba(31,35,40,0.10)] backdrop-blur-2xl">
+          <div className="fixed inset-x-0 top-20 z-40 max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-black/5 bg-white/98 px-5 pb-8 pt-4 shadow-[0_28px_70px_rgba(31,35,40,0.10)] backdrop-blur-2xl">
             <div className="mx-auto max-w-lg divide-y divide-black/10">
               {simpleLinks.map((link) => (
                 <a className="block py-5 text-3xl font-semibold tracking-[-0.05em] text-[#1f2328]" href={link.href} key={link.href}>

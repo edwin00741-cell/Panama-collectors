@@ -47,8 +47,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
             <section className="article-image-grid">
               <img src={service.visual} alt={`Operación de ${service.title}`} />
-              <img src="/assets/images/control-documental-cartera-bancaria.webp" alt="Control documental bancario" />
-              <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Reporte ejecutivo de cierre" />
+              <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Control documental bancario" />
+              <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Reporte ejecutivo de cierre" />
             </section>
           </div>
 

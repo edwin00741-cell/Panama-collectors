@@ -24,7 +24,7 @@ export default function EnglishServicesPage() {
         </section>
 
         <figure className="service-directory-image">
-          <img src="/assets/images/gestion-integral-recuperacion-y-cobros.webp" alt="Integrated recovery and collections management" />
+          <img src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Integrated recovery and collections management" />
         </figure>
 
         <section className="service-directory-grid" aria-label="Panama Collectors service list">

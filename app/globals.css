@@ -579,7 +579,7 @@ button, input, select, textarea { font: inherit; }
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(31, 35, 40, .9), rgba(31, 35, 40, .68)),
-    url("/assets/images/planeacion-operativa-recuperacion-activos.webp") center / cover;
+    url("/assets/images/generated/investigacion-operativa-activos.png") center / cover;
 }
 
 .dark-planning h2 {
@@ -1492,7 +1492,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   padding-bottom: clamp(76px, 8vw, 118px);
   background:
     linear-gradient(90deg, rgba(31, 35, 40, .94), rgba(31, 35, 40, .86)),
-    url("/assets/images/contacto-panama-collectors-atencion-corporativa.webp") center / cover;
+    url("/assets/images/generated/panama-collectors-equipo-corporativo.png") center / cover;
   color: var(--white);
 }
 
@@ -2729,7 +2729,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   background:
     radial-gradient(circle at 78% 72%, rgba(234, 106, 28, 0.36), transparent 26%),
     linear-gradient(90deg, rgba(31, 35, 40, .90), rgba(31, 35, 40, .68), rgba(31, 35, 40, .86)),
-    var(--hero-bg, url("/assets/images/panama-collectors-recuperacion-bancaria-control-operativo-hero.webp")) center / cover;
+    var(--hero-bg, url("/assets/images/generated/panama-collectors-hero-operacion-bancaria.png")) center / cover;
   filter: grayscale(1) saturate(.9);
 }
 

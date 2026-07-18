@@ -9,9 +9,9 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
     : ["Recuperación de activos", "Gestión de cartera", "Investigación operativa", "Informes ejecutivos"];
   const serviceBase = isEn ? "/en/services" : "/servicios";
   const serviceSupportImages = [
-    "/assets/images/campo-operativo-recuperacion-activos.webp",
-    "/assets/images/control-documental-cartera-bancaria.webp",
-    "/assets/images/investigacion-de-casos-bancarios.webp",
+    "/assets/images/generated/tramites-vehiculares-bancarios.png",
+    "/assets/images/generated/actualizacion-cartera-bancaria.png",
+    "/assets/images/generated/investigacion-operativa-activos.png",
   ];
 
   return (
@@ -19,7 +19,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
       <section
         className="home-reference-hero"
         data-hero-slider
-        style={{ "--hero-bg": "url('/assets/images/panama-collectors-recuperacion-bancaria-control-operativo-hero.webp')" } as React.CSSProperties}
+        style={{ "--hero-bg": "url('/assets/images/generated/panama-collectors-hero-operacion-bancaria.png')" } as React.CSSProperties}
       >
         <button className="hero-slider-arrow left" type="button" aria-label="Imagen anterior del hero" data-hero-prev>
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" /></svg>
@@ -58,8 +58,8 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
 
       <section className="section about-reference reveal">
         <div className="about-collage">
-          <img src="/assets/images/panama-collectors-equipo-corporativo.webp" alt="Equipo Panama Collectors" />
-          <img src="/assets/images/gestion-documental-bancaria-panama-collectors.webp" alt="Gestión documental" />
+          <img src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Equipo Panama Collectors" />
+          <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Gestión documental" />
         </div>
         <div>
           <p className="eyebrow">{isEn ? "About the company" : "Sobre la empresa"}</p>
@@ -126,10 +126,10 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
       </section>
 
       <section className="image-strip reveal" aria-label="Casos operativos">
-        <img src="/assets/images/asignacion-casos-recuperacion-bancaria.webp" alt="Asignación de casos" />
-        <img src="/assets/images/investigacion-de-casos-bancarios.webp" alt="Investigación de casos" />
-        <div className="strip-feature"><img src="/assets/images/operacion-de-campo-recuperacion-activos.webp" alt="Operación de campo" /><span className="strip-label">Estrategia operativa <b className="icon-arrow-up-right" aria-hidden="true" /></span></div>
-        <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Reporte ejecutivo de cierre" />
+        <img src="/assets/images/generated/actualizacion-cartera-bancaria.png" alt="Asignación de casos" />
+        <img src="/assets/images/generated/investigacion-operativa-activos.png" alt="Investigación de casos" />
+        <div className="strip-feature"><img src="/assets/images/generated/tramites-vehiculares-bancarios.png" alt="Operación de campo" /><span className="strip-label">Estrategia operativa <b className="icon-arrow-up-right" aria-hidden="true" /></span></div>
+        <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Reporte ejecutivo de cierre" />
       </section>
 
       <section className="section accordion-section reveal">
@@ -141,11 +141,11 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
         </div>
         <div className="image-accordion" data-accordion>
           {[
-            [isEn ? "Recovery" : "Recuperación", "/assets/images/recuperacion-de-autos-bancarios-panama.webp"],
-            [isEn ? "Portfolio" : "Cartera", "/assets/images/control-documental-cartera-bancaria.webp"],
-            [isEn ? "Investigation" : "Investigación", "/assets/images/investigacion-operativa-recuperacion-activos.webp"],
-            [isEn ? "Reports" : "Informes", "/assets/images/informes-ejecutivos-gestion-bancaria.webp"],
-            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/gestion-integral-recuperacion-y-cobros.webp"],
+            [isEn ? "Recovery" : "Recuperación", "/assets/images/generated/recuperacion-autos-bienes-bancarios.png"],
+            [isEn ? "Portfolio" : "Cartera", "/assets/images/generated/actualizacion-cartera-bancaria.png"],
+            [isEn ? "Investigation" : "Investigación", "/assets/images/generated/investigacion-operativa-activos.png"],
+            [isEn ? "Reports" : "Informes", "/assets/images/generated/informes-ejecutivos-bancarios.png"],
+            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/generated/panama-collectors-equipo-corporativo.png"],
           ].map(([label, visual], index) => (
             <button className={`accordion-item ${index === 2 ? "is-active" : ""}`} style={{ "--bg": `url('${visual}')` } as React.CSSProperties} aria-label={label} key={label}>
               <span>{label}</span>
@@ -160,7 +160,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
             <p className="eyebrow">{isEn ? "Banking experience" : "Experiencia bancaria"}</p>
             <h2>{isEn ? "Banks we have worked with." : "Bancos con los cuales hemos trabajado."}</h2>
             <p>{isEn ? "Panama Collectors has collaborated with recognized financial institutions, providing recovery management, follow-up and operational support." : "Panama Collectors ha colaborado con entidades reconocidas del mercado financiero, aportando gestión de recuperación, seguimiento y soporte operativo."}</p>
-            <img className="banks-context-image" src="/assets/images/experiencia-bancaria-panama-collectors.webp" alt="Experiencia bancaria Panama Collectors" />
+            <img className="banks-context-image" src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Experiencia bancaria Panama Collectors" />
             <div className="banks-highlights"><span>{isEn ? "Asset recovery" : "Recuperación de activos"}</span><span>{isEn ? "Portfolio management" : "Gestión de cartera"}</span><span>{isEn ? "Executive reports" : "Reportes ejecutivos"}</span></div>
           </div>
           <div className="bank-logo-carousel" data-bank-carousel aria-label="Bancos con los cuales hemos trabajado">
@@ -175,9 +175,9 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
         <div className="section-heading"><p className="eyebrow">{isEn ? "Operational applications" : "Aplicaciones operativas"}</p><h2>{isEn ? "Visible confidence across every management front." : "Confianza visible en cada frente de gestión."}</h2><p>{isEn ? "Field work, documentation, follow-up and reporting under a corporate operating standard." : "Campo, documentación, seguimiento y reportes bajo una lectura corporativa."}</p></div>
         <div className="proof-grid">
           {[
-            [isEn ? "Field operation" : "Campo operativo", "/assets/images/campo-operativo-recuperacion-activos.webp", isEn ? "Asset recovery and management with traceability for banking institutions." : "Recuperación y gestión de activos con trazabilidad para entidades bancarias."],
-            [isEn ? "Document control" : "Control documental", "/assets/images/control-documental-cartera-bancaria.webp", isEn ? "Organized information for decisions, follow-up and case closure." : "Información organizada para tomar decisiones, dar seguimiento y cerrar casos."],
-            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/gestion-integral-recuperacion-y-cobros.webp", isEn ? "A coordinated team for portfolios, reports and client management." : "Un equipo coordinado para atender carteras, reportes y gestión de clientes."],
+            [isEn ? "Field operation" : "Campo operativo", "/assets/images/generated/tramites-vehiculares-bancarios.png", isEn ? "Asset recovery and management with traceability for banking institutions." : "Recuperación y gestión de activos con trazabilidad para entidades bancarias."],
+            [isEn ? "Document control" : "Control documental", "/assets/images/generated/cumplimiento-documental-bancario.png", isEn ? "Organized information for decisions, follow-up and case closure." : "Información organizada para tomar decisiones, dar seguimiento y cerrar casos."],
+            [isEn ? "Integrated management" : "Gestión integral", "/assets/images/generated/panama-collectors-equipo-corporativo.png", isEn ? "A coordinated team for portfolios, reports and client management." : "Un equipo coordinado para atender carteras, reportes y gestión de clientes."],
           ].map(([label, visual, quote]) => (
             <article className="proof-card reveal" key={label}><img src={visual} alt={label} /><div className="proof-overlay"><span className="quote-mark" aria-hidden="true">"</span><blockquote>{quote}</blockquote><p>{label}</p></div></article>
           ))}
@@ -189,7 +189,7 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
           <p className="eyebrow">{isEn ? "Location" : "Ubicación"}</p>
           <h2>{isEn ? "Office in Obarrio, Panama City." : "Oficina en Obarrio, Ciudad de Panamá."}</h2>
           <p>{isEn ? "Panama Collectors operates from the PDC Building on Calle 56 D Este, a central location for coordination with financial institutions and operating teams." : "Panama Collectors atiende desde el Edificio PDC, en Calle 56 D Este, una zona céntrica para coordinación con entidades financieras y equipos operativos."}</p>
-          <img className="location-office-image" src="/assets/images/oficina-panama-collectors-obarrio.webp" alt="Oficina Panama Collectors en Obarrio" />
+          <img className="location-office-image" src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Oficina Panama Collectors en Obarrio" />
           <div className="location-details">
             <span>{address}</span><span>{isEn ? "Panama, Republic of Panama" : "Panamá, República de Panamá"}</span>
             <a className="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=C.%2056%20D%20Este%2C%20Obarrio%2C%20Edificio%20PDC%2C%20Oficina%2012K%2C%20Panama" target="_blank" rel="noreferrer">{isEn ? "Open in Google Maps" : "Abrir en Google Maps"}</a>

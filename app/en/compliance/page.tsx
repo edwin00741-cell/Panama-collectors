@@ -8,7 +8,7 @@ export default function EnglishCompliancePage() {
       eyebrow="Compliance"
       title="Security and due diligence"
       intro="Processes focused on confidentiality, data protection and good practices for the banking sector."
-      heroImage="/assets/images/control-documental-cartera-bancaria.webp"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
       imageAlt="Document control and operational compliance"
     >
       <section className="article-section">
@@ -27,9 +27,9 @@ export default function EnglishCompliancePage() {
       </section>
 
       <section className="article-image-grid">
-        <img src="/assets/images/informes-ejecutivos-gestion-bancaria.webp" alt="Executive banking management reports" />
-        <img src="/assets/images/reporte-ejecutivo-cierre-de-casos.webp" alt="Executive case closure report" />
-        <img src="/assets/images/planeacion-operativa-recuperacion-activos.webp" alt="Operational planning and security" />
+        <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Executive banking management reports" />
+        <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Executive case closure report" />
+        <img src="/assets/images/generated/investigacion-operativa-activos.png" alt="Operational planning and security" />
       </section>
     </ContentPage>
   );

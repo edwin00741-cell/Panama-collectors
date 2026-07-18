@@ -22,7 +22,7 @@ export default function ServiciosPage() {
         </section>
 
         <figure className="service-directory-image">
-          <img src="/assets/images/gestion-integral-recuperacion-y-cobros.webp" alt="Gestión integral de recuperación y cobros" />
+          <img src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Gestión integral de recuperación y cobros" />
         </figure>
 
         <section className="service-directory-grid" aria-label="Listado de servicios Panama Collectors">

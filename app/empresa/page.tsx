@@ -7,7 +7,7 @@ export default function EmpresaPage() {
       eyebrow="Reseña histórica"
       title="Panama Collectors S.A."
       intro="Empresa panameña especializada en gestión de cobros, recuperación y adjudicación de bienes muebles bancarios, orientada a brindar soluciones eficientes, responsables y alineadas con los estándares del sector financiero."
-      heroImage="/assets/images/panama-collectors-equipo-corporativo.webp"
+      heroImage="/assets/images/generated/panama-collectors-equipo-corporativo.png"
       imageAlt="Equipo corporativo de Panama Collectors en reunión operativa"
     >
       <section className="article-section">
@@ -31,9 +31,9 @@ export default function EmpresaPage() {
       </section>
 
       <section className="article-image-grid">
-        <img src="/assets/images/gestion-documental-bancaria-panama-collectors.webp" alt="Gestión documental bancaria" />
-        <img src="/assets/images/control-documental-cartera-bancaria.webp" alt="Control documental de cartera" />
-        <img src="/assets/images/experiencia-bancaria-panama-collectors.webp" alt="Experiencia bancaria Panama Collectors" />
+        <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Gestión documental bancaria" />
+        <img src="/assets/images/generated/actualizacion-cartera-bancaria.png" alt="Control documental de cartera" />
+        <img src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Experiencia bancaria Panama Collectors" />
       </section>
 
       <section className="article-section">
