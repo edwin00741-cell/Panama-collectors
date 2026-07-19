@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { FloatingActions, SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getServiceBySlug, getServices, getSpanishServicePathFromEnglishSlug, whatsappUrl } from "@/lib/site-data";
@@ -27,7 +27,7 @@ export default async function EnglishServicePage({ params }: { params: Promise<{
           </header>
 
           <figure className="article-hero-image">
-            <img src={service.pageVisual} alt={service.title} />
+            <img loading="eager" fetchPriority="high" decoding="async" src={service.pageVisual} alt={service.title} />
           </figure>
 
           <section className="article-lead">
@@ -46,9 +46,9 @@ export default async function EnglishServicePage({ params }: { params: Promise<{
             </section>
 
             <section className="article-image-grid">
-              <img src={service.visual} alt={`Operation for ${service.title}`} />
-              <img src={service.supportVisuals[0]} alt="Banking document control" />
-              <img src={service.supportVisuals[1]} alt="Executive closure report" />
+              <img loading="lazy" decoding="async" src={service.visual} alt={`Operation for ${service.title}`} />
+              <img loading="lazy" decoding="async" src={service.supportVisuals[0]} alt="Banking document control" />
+              <img loading="lazy" decoding="async" src={service.supportVisuals[1]} alt="Executive closure report" />
             </section>
           </div>
 
@@ -63,7 +63,7 @@ export default async function EnglishServicePage({ params }: { params: Promise<{
               <h2>Let us validate case volume, coverage and response times.</h2>
             </div>
             <div className="article-actions">
-              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img src="/assets/whatsapp.png" alt="" /> Consult on WhatsApp</a>
+              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img loading="lazy" decoding="async" src="/assets/whatsapp.png" alt="" /> Consult on WhatsApp</a>
               <a className="btn btn-secondary" href="/en#contacto">Send request</a>
             </div>
           </footer>

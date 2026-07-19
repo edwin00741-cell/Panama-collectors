@@ -1,10 +1,10 @@
-import { address, email, type Locale, officePhone, officePhoneUrl, whatsappPhone, whatsappUrl } from "@/lib/site-data";
+﻿import { address, email, type Locale, officePhone, officePhoneUrl, whatsappPhone, whatsappUrl } from "@/lib/site-data";
 
 export function FloatingActions() {
   return (
     <>
       <a className="floating-whatsapp" href={whatsappUrl} aria-label="Contactar por WhatsApp">
-        <img src="/assets/whatsapp.png" alt="" />
+        <img loading="lazy" decoding="async" src="/assets/whatsapp.png" alt="" />
       </a>
       <button className="back-top" type="button" aria-label="Volver arriba" data-back-top>
         <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -23,14 +23,14 @@ export function SiteFooter({ locale = "es" }: { locale?: Locale }) {
       <div className="footer-inner">
         <div className="footer-brand-block">
           <a className="footer-brand" href="/" aria-label="Panama Collectors inicio">
-            <img className="footer-logo" src="/assets/brand/panama-collectors-logo-negative.svg" alt="Panama Collectors" />
+            <img loading="lazy" decoding="async" className="footer-logo" src="/assets/brand/panama-collectors-logo-negative.svg" alt="Panama Collectors" />
           </a>
-          <p>{isEn ? "Asset recovery and management for financial institutions, with operational focus, traceability and compliance." : "Recuperación y gestión de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento."}</p>
+          <p>{isEn ? "Asset recovery and management for financial institutions, with operational focus, traceability and compliance." : "RecuperaciÃ³n y gestiÃ³n de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento."}</p>
           <p className="footer-license">Panama Collectors S.A.</p>
         </div>
 
         <div className="footer-column">
-          <h2>{isEn ? "Navigation" : "Navegación"}</h2>
+          <h2>{isEn ? "Navigation" : "NavegaciÃ³n"}</h2>
           <a href={isEn ? "/en#servicios" : "/#servicios"}>{isEn ? "Services" : "Servicios"}</a>
           <a href={isEn ? "/en/company" : "/empresa"}>{isEn ? "Company" : "Empresa"}</a>
           <a href={isEn ? "/en/banking-clients" : "/clientes-bancarios"}>{isEn ? "Banks" : "Bancos"}</a>
@@ -38,7 +38,7 @@ export function SiteFooter({ locale = "es" }: { locale?: Locale }) {
         </div>
 
         <div className="footer-column">
-          <h2>{isEn ? "Information" : "Información"}</h2>
+          <h2>{isEn ? "Information" : "InformaciÃ³n"}</h2>
           <a href={isEn ? "/en/services" : "/servicios"}>{isEn ? "All services" : "Todos los servicios"}</a>
           <a href={isEn ? "/en/privacy" : "/privacidad"}>{isEn ? "Privacy" : "Privacidad"}</a>
           <a href={isEn ? "/en#contacto" : "/#contacto"}>{isEn ? "Request quote" : "Cotizar"}</a>
@@ -51,14 +51,14 @@ export function SiteFooter({ locale = "es" }: { locale?: Locale }) {
           <a href={officePhoneUrl}>Oficina: {officePhone}</a>
           <a href={`mailto:${email}`}>{email}</a>
           <span>{address}</span>
-          <span>{isEn ? "Panama, Republic of Panama" : "Panamá, República de Panamá"}</span>
+          <span>{isEn ? "Panama, Republic of Panama" : "PanamÃ¡, RepÃºblica de PanamÃ¡"}</span>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <span>{isEn ? "Final information, reports and conditions depend on evaluation and authorization by each financial institution." : "La información, reportes y condiciones finales dependen de evaluación y autorización de cada entidad financiera."}</span>
+        <span>{isEn ? "Final information, reports and conditions depend on evaluation and authorization by each financial institution." : "La informaciÃ³n, reportes y condiciones finales dependen de evaluaciÃ³n y autorizaciÃ³n de cada entidad financiera."}</span>
         <span>
-          © 2026 Panama Collectors S.A. {isEn ? "All rights reserved." : "Todos los derechos reservados."}{" "}
+          Â© 2026 Panama Collectors S.A. {isEn ? "All rights reserved." : "Todos los derechos reservados."}{" "}
           <a href="https://www.harmonyagency.lat/" target="_blank" rel="noreferrer">
             Creado por Harmony Agency
           </a>

@@ -1,4 +1,4 @@
-import { ContentPage } from "@/components/content-page";
+﻿import { ContentPage } from "@/components/content-page";
 
 export default function EnglishPrivacyPage() {
   return (
@@ -8,7 +8,7 @@ export default function EnglishPrivacyPage() {
       eyebrow="Privacy"
       title="Privacy policy"
       intro="Responsible handling of information received through digital media, forms and Panama Collectors S.A. contact channels."
-      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.webp"
       imageAlt="Document management and information privacy"
     >
       <section className="article-section">

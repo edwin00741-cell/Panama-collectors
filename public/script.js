@@ -8,10 +8,10 @@ const heroSlider = document.querySelector("[data-hero-slider]");
 const heroPrev = document.querySelector("[data-hero-prev]");
 const heroNext = document.querySelector("[data-hero-next]");
 const heroImages = [
-  "url('/assets/images/generated/panama-collectors-hero-operacion-bancaria.png')",
-  "url('/assets/images/generated/investigacion-operativa-activos.png')",
-  "url('/assets/images/generated/panama-collectors-equipo-corporativo.png')",
-  "url('/assets/images/generated/informes-ejecutivos-bancarios.png')"
+  "url('/assets/images/generated/panama-collectors-hero-operacion-bancaria.webp')",
+  "url('/assets/images/generated/investigacion-operativa-activos.webp')",
+  "url('/assets/images/generated/panama-collectors-equipo-corporativo.webp')",
+  "url('/assets/images/generated/informes-ejecutivos-bancarios.webp')"
 ];
 const bankLogos = [
   { name: "BAC Credomatic", src: "/assets/banks/bac.png" },
@@ -19,7 +19,7 @@ const bankLogos = [
   { name: "Banesco", src: "/assets/banks/banesco.svg" },
   { name: "Banco General", src: "/assets/banks/banco-general.png" },
   { name: "Banco LAFISE", src: "/assets/banks/lafise-cropped.png", className: "bank-logo-card-lafise" },
-  { name: "Global Bank", src: "/assets/banks/global-bank.svg", className: "is-dark" }
+  { name: "Global Bank", src: "/assets/banks/global-bank-clean.png" }
 ];
 let heroIndex = 0;
 

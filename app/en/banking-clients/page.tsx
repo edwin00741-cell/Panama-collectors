@@ -1,4 +1,4 @@
-import { ContentPage } from "@/components/content-page";
+﻿import { ContentPage } from "@/components/content-page";
 import { bankLogos } from "@/lib/site-data";
 
 export default function EnglishBankingClientsPage() {
@@ -9,7 +9,7 @@ export default function EnglishBankingClientsPage() {
       eyebrow="Banking clients"
       title="Banks we have worked with"
       intro="Operational experience with financial institutions in the Panamanian market, providing asset recovery, portfolio follow-up and documented support."
-      heroImage="/assets/images/generated/informes-ejecutivos-bancarios.png"
+      heroImage="/assets/images/generated/informes-ejecutivos-bancarios.webp"
       imageAlt="Corporate meeting with financial institutions"
     >
       <section className="article-section">
@@ -18,7 +18,7 @@ export default function EnglishBankingClientsPage() {
       </section>
 
       <section className="article-bank-logos" aria-label="Bank logos">
-        {bankLogos.map(([name, src]) => <img src={src} alt={name} key={name} />)}
+        {bankLogos.map(([name, src]) => <img loading="lazy" decoding="async" src={src} alt={name} key={name} />)}
       </section>
 
       <section className="article-section">

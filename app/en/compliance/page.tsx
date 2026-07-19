@@ -1,4 +1,4 @@
-import { ContentPage } from "@/components/content-page";
+﻿import { ContentPage } from "@/components/content-page";
 
 export default function EnglishCompliancePage() {
   return (
@@ -8,7 +8,7 @@ export default function EnglishCompliancePage() {
       eyebrow="Compliance"
       title="Security and due diligence"
       intro="Processes focused on confidentiality, data protection and good practices for the banking sector."
-      heroImage="/assets/images/generated/cumplimiento-documental-bancario.png"
+      heroImage="/assets/images/generated/cumplimiento-documental-bancario.webp"
       imageAlt="Document control and operational compliance"
     >
       <section className="article-section">
@@ -27,9 +27,9 @@ export default function EnglishCompliancePage() {
       </section>
 
       <section className="article-image-grid">
-        <img src="/assets/images/generated/informes-ejecutivos-bancarios.png" alt="Executive banking management reports" />
-        <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Executive case closure report" />
-        <img src="/assets/images/generated/investigacion-operativa-activos.png" alt="Operational planning and security" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/informes-ejecutivos-bancarios.webp" alt="Executive banking management reports" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/cumplimiento-documental-bancario.webp" alt="Executive case closure report" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/investigacion-operativa-activos.webp" alt="Operational planning and security" />
       </section>
     </ContentPage>
   );

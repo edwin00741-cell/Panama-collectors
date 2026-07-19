@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 import { FloatingActions, SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { serviceTranslations, services, whatsappUrl } from "@/lib/site-data";
@@ -22,12 +22,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <h1>{service.title}</h1>
             <div className="article-meta">
               <span>Panama Collectors S.A.</span>
-              <span>Operación bancaria</span>
+              <span>OperaciÃ³n bancaria</span>
             </div>
           </header>
 
           <figure className="article-hero-image">
-            <img src={service.pageVisual} alt={service.title} />
+            <img loading="eager" fetchPriority="high" decoding="async" src={service.pageVisual} alt={service.title} />
           </figure>
 
           <section className="article-lead">
@@ -37,7 +37,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <div className="article-content">
             <section className="article-section">
               <h2>Alcance del servicio</h2>
-              <p>{service.short} El objetivo es entregar información clara, seguimiento documentado y soporte operativo según las reglas de cada entidad financiera.</p>
+              <p>{service.short} El objetivo es entregar informaciÃ³n clara, seguimiento documentado y soporte operativo segÃºn las reglas de cada entidad financiera.</p>
             </section>
 
             <section className="article-section">
@@ -46,14 +46,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </section>
 
             <section className="article-image-grid">
-              <img src={service.visual} alt={`Operación de ${service.title}`} />
-              <img src={service.supportVisuals[0]} alt="Control documental bancario" />
-              <img src={service.supportVisuals[1]} alt="Reporte ejecutivo de cierre" />
+              <img loading="lazy" decoding="async" src={service.visual} alt={`OperaciÃ³n de ${service.title}`} />
+              <img loading="lazy" decoding="async" src={service.supportVisuals[0]} alt="Control documental bancario" />
+              <img loading="lazy" decoding="async" src={service.supportVisuals[1]} alt="Reporte ejecutivo de cierre" />
             </section>
           </div>
 
           <aside className="article-quote">
-            <p>Una gestión efectiva requiere coordinación de campo, documentación confiable y reportes que permitan tomar decisiones con rapidez.</p>
+            <p>Una gestiÃ³n efectiva requiere coordinaciÃ³n de campo, documentaciÃ³n confiable y reportes que permitan tomar decisiones con rapidez.</p>
             <span>Panama Collectors S.A.</span>
           </aside>
 
@@ -63,7 +63,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <h2>Validemos volumen de casos, cobertura y tiempos de respuesta.</h2>
             </div>
             <div className="article-actions">
-              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img src="/assets/whatsapp.png" alt="" /> Consultar por WhatsApp</a>
+              <a className="btn btn-primary has-whatsapp" href={whatsappUrl}><img loading="lazy" decoding="async" src="/assets/whatsapp.png" alt="" /> Consultar por WhatsApp</a>
               <a className="btn btn-secondary" href="/#contacto">Enviar solicitud</a>
             </div>
           </footer>

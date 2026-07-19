@@ -1,4 +1,4 @@
-import { ContentPage } from "@/components/content-page";
+﻿import { ContentPage } from "@/components/content-page";
 
 export default function EnglishCompanyPage() {
   return (
@@ -8,7 +8,7 @@ export default function EnglishCompanyPage() {
       eyebrow="Company history"
       title="Panama Collectors S.A."
       intro="Panamanian company specialized in collections management, recovery and adjudication of bank-owned movable assets, focused on efficient, responsible solutions aligned with financial sector standards."
-      heroImage="/assets/images/generated/panama-collectors-equipo-corporativo.png"
+      heroImage="/assets/images/generated/panama-collectors-equipo-corporativo.webp"
       imageAlt="Panama Collectors corporate team in an operational meeting"
     >
       <section className="article-section">
@@ -32,9 +32,9 @@ export default function EnglishCompanyPage() {
       </section>
 
       <section className="article-image-grid">
-        <img src="/assets/images/generated/cumplimiento-documental-bancario.png" alt="Banking document management" />
-        <img src="/assets/images/generated/actualizacion-cartera-bancaria.png" alt="Portfolio document control" />
-        <img src="/assets/images/generated/panama-collectors-equipo-corporativo.png" alt="Panama Collectors banking experience" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/cumplimiento-documental-bancario.webp" alt="Banking document management" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/actualizacion-cartera-bancaria.webp" alt="Portfolio document control" />
+        <img loading="lazy" decoding="async" src="/assets/images/generated/panama-collectors-equipo-corporativo.webp" alt="Panama Collectors banking experience" />
       </section>
 
       <section className="article-section">

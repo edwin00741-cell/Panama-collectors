@@ -1,4 +1,4 @@
-import { FloatingActions, SiteFooter } from "@/components/site-footer";
+﻿import { FloatingActions, SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getServices, whatsappUrl } from "@/lib/site-data";
 
@@ -24,14 +24,14 @@ export default function EnglishServicesPage() {
         </section>
 
         <figure className="service-directory-image">
-          <img src="/assets/images/generated/panama-collectors-hero-operacion-bancaria.png" alt="Integrated recovery and collections management" />
+          <img loading="eager" fetchPriority="high" decoding="async" src="/assets/images/generated/panama-collectors-hero-operacion-bancaria.webp" alt="Integrated recovery and collections management" />
         </figure>
 
         <section className="service-directory-grid" aria-label="Panama Collectors service list">
           {services.map((service, index) => (
             <a className="service-directory-card" href={`/en/services/${service.slug}`} key={service.slug}>
               <div className="service-directory-card-media">
-                <img src={service.pageVisual} alt={service.title} />
+                <img loading="lazy" decoding="async" src={service.pageVisual} alt={service.title} />
               </div>
               <div className="service-directory-card-copy">
                 <span>{String(index + 1).padStart(2, "0")}</span>
@@ -53,7 +53,7 @@ export default function EnglishServicesPage() {
             <p>We can review case volume, coverage, expected timing and report format to prepare a scope according to your institution's operation.</p>
           </div>
           <a className="btn btn-primary has-whatsapp" href={whatsappUrl}>
-            <img src="/assets/whatsapp.png" alt="" /> Coordinate on WhatsApp
+            <img loading="lazy" decoding="async" src="/assets/whatsapp.png" alt="" /> Coordinate on WhatsApp
           </a>
         </section>
       </main>
