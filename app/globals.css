@@ -200,7 +200,7 @@ button, input, select, textarea { font: inherit; }
   top: 50%;
   right: 15px;
   color: var(--white);
-  content: "â€º";
+  content: "›";
   font-size: 1.2rem;
   line-height: 1;
   transform: translateY(-52%);
@@ -758,7 +758,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   position: absolute;
   top: 50%;
   right: 22px;
-  content: "â€º";
+  content: "›";
   font-size: 1.35rem;
   line-height: 1;
   transform: translateY(-52%);

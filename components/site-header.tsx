@@ -17,8 +17,8 @@ function getNavigation(locale: Locale) {
         { label: "Banking clients", href: "/en/banking-clients", description: "Experience with financial institutions." },
       ]
     : [
-        { label: "ReseÃ±a histÃ³rica", href: "/empresa", description: "Trayectoria, evoluciÃ³n y perfil institucional." },
-        { label: "Cumplimiento", href: "/cumplimiento", description: "Debida diligencia, seguridad y buenas prÃ¡cticas." },
+        { label: "Reseña histórica", href: "/empresa", description: "Trayectoria, evolución y perfil institucional." },
+        { label: "Cumplimiento", href: "/cumplimiento", description: "Debida diligencia, seguridad y buenas prácticas." },
         { label: "Clientes bancarios", href: "/clientes-bancarios", description: "Experiencia con entidades financieras." },
       ];
 
@@ -79,9 +79,9 @@ function DesktopDropdown({
         <div className="grid grid-cols-[0.8fr_1.8fr] gap-8 rounded-[28px] border border-black/5 bg-white/95 p-7 shadow-[0_32px_80px_rgba(31,35,40,0.12)] backdrop-blur-2xl">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#ea6a1c]">{label}</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[#1f2328]">{isEn ? "Banking operations with a clear structure." : "GestiÃ³n bancaria con estructura clara."}</h2>
+            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[#1f2328]">{isEn ? "Banking operations with a clear structure." : "Gestión bancaria con estructura clara."}</h2>
             <a className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#1f2328]" href={href}>
-              {isEn ? "View section" : "Ver secciÃ³n"}
+              {isEn ? "View section" : "Ver sección"}
               <ArrowUpRight className="h-4 w-4" strokeWidth={1.8} />
             </a>
           </div>
@@ -111,7 +111,7 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-2xl">
-      <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 md:px-8" aria-label="NavegaciÃ³n principal">
+      <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Navegación principal">
         <a className="flex min-w-0 items-center" href="/" aria-label="Panama Collectors inicio">
           <img loading="lazy" decoding="async" className="h-[62px] w-[235px] object-contain object-left md:h-[68px] md:w-[310px]" src="/assets/brand/panama-collectors-logo-positive-transparent.svg" alt="Panama Collectors" />
         </a>
@@ -193,7 +193,7 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
               <ArrowUpRight className="h-4 w-4" strokeWidth={1.8} />
             </a>
             <a className="mx-auto mt-3 flex max-w-lg min-h-12 items-center justify-center rounded-full border border-black/10 px-6 text-base font-semibold text-[#1f2328]" href={languageHref}>
-              {isEn ? "Ver en espaÃ±ol" : "View in English"}
+              {isEn ? "Ver en español" : "View in English"}
             </a>
           </div>
         </details>

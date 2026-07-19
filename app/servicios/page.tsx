@@ -9,20 +9,20 @@ export default function ServiciosPage() {
       <main className="service-directory">
         <section className="service-directory-hero">
           <p className="article-kicker">Servicios especializados</p>
-          <h1>Soluciones para recuperaciÃ³n, cartera y soporte bancario.</h1>
+          <h1>Soluciones para recuperación, cartera y soporte bancario.</h1>
           <p>
-            Panama Collectors acompaÃ±a a entidades financieras con operaciÃ³n de campo, actualizaciÃ³n de cartera,
-            investigaciÃ³n, informes ejecutivos y soporte administrativo para bienes muebles.
+            Panama Collectors acompaña a entidades financieras con operación de campo, actualización de cartera,
+            investigación, informes ejecutivos y soporte administrativo para bienes muebles.
           </p>
           <div className="service-directory-meta">
-            <span>6 lÃ­neas de servicio</span>
-            <span>AtenciÃ³n para entidades financieras</span>
+            <span>6 líneas de servicio</span>
+            <span>Atención para entidades financieras</span>
             <span>Contacto directo por WhatsApp</span>
           </div>
         </section>
 
         <figure className="service-directory-image">
-          <img loading="eager" fetchPriority="high" decoding="async" src="/assets/images/generated/panama-collectors-hero-operacion-bancaria.webp" alt="GestiÃ³n integral de recuperaciÃ³n y cobros" />
+          <img loading="eager" fetchPriority="high" decoding="async" src="/assets/images/generated/panama-collectors-hero-operacion-bancaria.webp" alt="Gestión integral de recuperación y cobros" />
         </figure>
 
         <section className="service-directory-grid" aria-label="Listado de servicios Panama Collectors">
@@ -47,8 +47,8 @@ export default function ServiciosPage() {
         <section className="service-directory-cta">
           <div>
             <p className="article-kicker">Propuesta operativa</p>
-            <h2>Â¿Necesita combinar varios servicios en una misma cartera?</h2>
-            <p>Podemos revisar volumen de casos, cobertura, tiempos esperados y formato de reportes para preparar un alcance segÃºn la operaciÃ³n de su entidad.</p>
+            <h2>¿Necesita combinar varios servicios en una misma cartera?</h2>
+            <p>Podemos revisar volumen de casos, cobertura, tiempos esperados y formato de reportes para preparar un alcance según la operación de su entidad.</p>
           </div>
           <a className="btn btn-primary has-whatsapp" href={whatsappUrl}>
             <img loading="lazy" decoding="async" src="/assets/whatsapp.png" alt="" /> Coordinar por WhatsApp

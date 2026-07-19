@@ -22,7 +22,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <h1>{service.title}</h1>
             <div className="article-meta">
               <span>Panama Collectors S.A.</span>
-              <span>OperaciÃ³n bancaria</span>
+              <span>Operación bancaria</span>
             </div>
           </header>
 
@@ -37,7 +37,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <div className="article-content">
             <section className="article-section">
               <h2>Alcance del servicio</h2>
-              <p>{service.short} El objetivo es entregar informaciÃ³n clara, seguimiento documentado y soporte operativo segÃºn las reglas de cada entidad financiera.</p>
+              <p>{service.short} El objetivo es entregar información clara, seguimiento documentado y soporte operativo según las reglas de cada entidad financiera.</p>
             </section>
 
             <section className="article-section">
@@ -46,14 +46,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </section>
 
             <section className="article-image-grid">
-              <img loading="lazy" decoding="async" src={service.visual} alt={`OperaciÃ³n de ${service.title}`} />
+              <img loading="lazy" decoding="async" src={service.visual} alt={`Operación de ${service.title}`} />
               <img loading="lazy" decoding="async" src={service.supportVisuals[0]} alt="Control documental bancario" />
               <img loading="lazy" decoding="async" src={service.supportVisuals[1]} alt="Reporte ejecutivo de cierre" />
             </section>
           </div>
 
           <aside className="article-quote">
-            <p>Una gestiÃ³n efectiva requiere coordinaciÃ³n de campo, documentaciÃ³n confiable y reportes que permitan tomar decisiones con rapidez.</p>
+            <p>Una gestión efectiva requiere coordinación de campo, documentación confiable y reportes que permitan tomar decisiones con rapidez.</p>
             <span>Panama Collectors S.A.</span>
           </aside>
 

@@ -7,13 +7,13 @@ export default function ClientesBancariosPage() {
       switchHref="/en/banking-clients"
       eyebrow="Clientes bancarios"
       title="Bancos con los cuales hemos trabajado"
-      intro="Experiencia operativa con entidades financieras del mercado panameÃ±o, aportando recuperaciÃ³n de activos, seguimiento de cartera y soporte documentado."
+      intro="Experiencia operativa con entidades financieras del mercado panameño, aportando recuperación de activos, seguimiento de cartera y soporte documentado."
       heroImage="/assets/images/generated/informes-ejecutivos-bancarios.webp"
-      imageAlt="ReuniÃ³n corporativa con entidades financieras"
+      imageAlt="Reunión corporativa con entidades financieras"
     >
       <section className="article-section">
         <h2>Experiencia financiera</h2>
-        <p>Panama Collectors ha trabajado con entidades como BAC PanamÃ¡, Multibank, Banesco, Panacredit, Banco Lafise, Davivienda, Scotiabank y FWLA.</p>
+        <p>Panama Collectors ha trabajado con entidades como BAC Panamá, Multibank, Banesco, Panacredit, Banco Lafise, Davivienda, Scotiabank y FWLA.</p>
       </section>
 
       <section className="article-bank-logos" aria-label="Logos bancarios">
@@ -22,7 +22,7 @@ export default function ClientesBancariosPage() {
 
       <section className="article-section">
         <h2>Soporte operativo</h2>
-        <p>La gestiÃ³n se enfoca en trazabilidad, reportes ejecutivos y coordinaciÃ³n de campo para que cada entidad pueda evaluar avances, evidencias y cierres de forma clara.</p>
+        <p>La gestión se enfoca en trazabilidad, reportes ejecutivos y coordinación de campo para que cada entidad pueda evaluar avances, evidencias y cierres de forma clara.</p>
       </section>
     </ContentPage>
   );

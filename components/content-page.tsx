@@ -18,7 +18,7 @@ export function ContentPage({
   title,
   intro,
   heroImage = "/assets/images/generated/panama-collectors-hero-operacion-bancaria.webp",
-  imageAlt = "OperaciÃ³n corporativa Panama Collectors",
+  imageAlt = "Operación corporativa Panama Collectors",
   locale = "es",
   switchHref,
   children,
@@ -35,7 +35,7 @@ export function ContentPage({
             <h1>{title}</h1>
             <div className="article-meta">
               <span>Panama Collectors S.A.</span>
-              <span>{isEn ? "Asset management" : "GestiÃ³n de activos"}</span>
+              <span>{isEn ? "Asset management" : "Gestión de activos"}</span>
             </div>
           </header>
 
@@ -53,7 +53,7 @@ export function ContentPage({
             <p>
               {isEn
                 ? "We operate with traceability, confidentiality and documented communication so each financial institution can make decisions with clear information."
-                : "Operamos con trazabilidad, confidencialidad y comunicaciÃ³n documentada para que cada entidad financiera pueda tomar decisiones con informaciÃ³n clara."}
+                : "Operamos con trazabilidad, confidencialidad y comunicación documentada para que cada entidad financiera pueda tomar decisiones con información clara."}
             </p>
             <span>Panama Collectors S.A.</span>
           </aside>
