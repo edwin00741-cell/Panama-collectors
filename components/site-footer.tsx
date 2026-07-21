@@ -23,7 +23,7 @@ export function SiteFooter({ locale = "es" }: { locale?: Locale }) {
       <div className="footer-inner">
         <div className="footer-brand-block">
           <a className="footer-brand" href="/" aria-label="Panama Collectors inicio">
-            <img loading="lazy" decoding="async" className="footer-logo" src="/assets/brand/panama-collectors-logo-negative.svg" alt="Panama Collectors" />
+            <img loading="lazy" decoding="async" className="footer-logo" src="/assets/brand/panama-collectors-horizontal-negative.svg" alt="Panama Collectors" />
           </a>
           <p>{isEn ? "Asset recovery and management for financial institutions, with operational focus, traceability and compliance." : "Recuperación y gestión de activos para entidades financieras, con enfoque operativo, trazabilidad y cumplimiento."}</p>
           <p className="footer-license">Panama Collectors S.A.</p>

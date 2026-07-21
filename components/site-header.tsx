@@ -113,7 +113,7 @@ export function SiteHeader({ locale = "es", switchHref }: { locale?: Locale; swi
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-2xl">
       <nav className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Navegación principal">
         <a className="flex min-w-0 items-center" href="/" aria-label="Panama Collectors inicio">
-          <img loading="lazy" decoding="async" className="h-[62px] w-[235px] object-contain object-left md:h-[68px] md:w-[310px]" src="/assets/brand/panama-collectors-logo-positive-transparent.svg" alt="Panama Collectors" />
+          <img loading="eager" decoding="async" className="h-[70px] w-[270px] object-contain object-left md:h-[72px] md:w-[330px]" src="/assets/brand/panama-collectors-horizontal-positive.svg" alt="Panama Collectors" />
         </a>
 
         <div className="hidden items-center gap-1 md:flex">

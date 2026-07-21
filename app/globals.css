@@ -2850,8 +2850,10 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   }
 
   .home-reference-hero p {
-    max-width: 340px;
-    font-size: 1.08rem;
+    max-width: 520px;
+    margin-top: 30px;
+    padding-inline: 8px;
+    font-size: 1rem;
     line-height: 1.52;
   }
 
@@ -2868,8 +2870,8 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   }
 
   .location-copy h2 {
-    max-width: 340px;
-    font-size: clamp(2rem, 8.4vw, 2.8rem);
+    max-width: 520px;
+    font-size: clamp(2rem, 7.6vw, 2.8rem);
     line-height: 1.02;
     letter-spacing: -0.055em;
   }
@@ -2954,7 +2956,9 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 
   .home-reference-hero p {
     max-width: 100%;
-    font-size: 1.08rem;
+    margin-top: 30px;
+    padding-inline: 8px;
+    font-size: 1rem;
     line-height: 1.52;
   }
 
@@ -3020,7 +3024,8 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   }
 
   .hero-slider-arrow {
-    top: 52%;
+    top: auto;
+    bottom: 140px;
   }
 }
 
