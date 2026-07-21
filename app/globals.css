@@ -334,6 +334,13 @@ button, input, select, textarea { font: inherit; }
   padding-inline: clamp(20px, 6vw, 84px);
 }
 
+main,
+.site-footer {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
 .home-reference-hero {
   position: relative;
   display: grid;
@@ -1227,7 +1234,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 }
 
 .media-track.vertical img {
-  width: min(430px, 82vw);
+  width: min(500px, 88%);
   aspect-ratio: 3 / 2;
   flex: 0 0 auto;
 }
@@ -2698,7 +2705,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   }
 
   .media-track.vertical img {
-    width: min(340px, calc(100vw - 76px));
+    width: min(390px, calc(100vw - 44px));
     border-width: 7px;
     border-radius: 20px;
   }

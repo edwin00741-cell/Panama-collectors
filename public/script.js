@@ -49,14 +49,14 @@ const updateServiceTracks = () => {
 
     if (track.classList.contains("vertical")) {
       const overflow = Math.max(track.scrollHeight - media.clientHeight, 0);
-      const maxShift = Math.min(overflow, 280);
+      const maxShift = overflow;
       const y = (0.5 - progress) * maxShift;
       track.style.transform = `translate(-50%, -50%) translateY(${y}px)`;
       return;
     }
 
     const overflow = Math.max(track.scrollWidth - media.clientWidth, 0);
-    const maxShift = Math.min(overflow, 190);
+    const maxShift = overflow;
     const x = (0.5 - progress) * maxShift;
     track.style.transform = `translateY(-50%) translateX(${x}px)`;
   });
