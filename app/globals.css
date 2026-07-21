@@ -1212,12 +1212,14 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 .media-track.horizontal {
   top: 50%;
   left: 0;
+  gap: 20px;
   transform: translateY(-50%);
 }
 
 .media-track.vertical {
   top: 50%;
   left: 50%;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
   transform: translate(-50%, -50%);
@@ -1235,6 +1237,12 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 
 .media-track.vertical img {
   width: min(500px, 88%);
+  aspect-ratio: 3 / 2;
+  flex: 0 0 auto;
+}
+
+.media-track.horizontal img {
+  width: min(500px, 88vw);
   aspect-ratio: 3 / 2;
   flex: 0 0 auto;
 }
@@ -2704,7 +2712,8 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
     gap: 20px;
   }
 
-  .media-track.vertical img {
+  .media-track.vertical img,
+  .media-track.horizontal img {
     width: min(390px, calc(100vw - 44px));
     border-width: 7px;
     border-radius: 20px;
