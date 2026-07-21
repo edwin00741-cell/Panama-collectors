@@ -15,7 +15,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   return (
     <>
       <SiteHeader switchHref={`/en/services/${serviceTranslations[service.slug as keyof typeof serviceTranslations].slug}`} />
-      <main className="article-page">
+      <main className="article-page service-article-page">
         <article className="article-shell">
           <header className="article-header">
             <p className="article-kicker">Servicio especializado</p>

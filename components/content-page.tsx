@@ -28,7 +28,7 @@ export function ContentPage({
   return (
     <>
       <SiteHeader locale={locale} switchHref={switchHref} />
-      <main className="article-page">
+      <main className="article-page content-article-page">
         <article className="article-shell">
           <header className="article-header">
             <p className="article-kicker">{eyebrow}</p>

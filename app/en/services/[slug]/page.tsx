@@ -15,7 +15,7 @@ export default async function EnglishServicePage({ params }: { params: Promise<{
   return (
     <>
       <SiteHeader locale="en" switchHref={getSpanishServicePathFromEnglishSlug(slug)} />
-      <main className="article-page">
+      <main className="article-page service-article-page">
         <article className="article-shell">
           <header className="article-header">
             <p className="article-kicker">Specialized service</p>

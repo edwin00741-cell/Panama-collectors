@@ -182,7 +182,9 @@ export function HomePage({ locale = "es" }: { locale?: Locale }) {
       <section className="section location-section reveal" id="ubicacion">
         <div className="location-copy">
           <p className="eyebrow">{isEn ? "Location" : "Ubicación"}</p>
-          <h2>{isEn ? "Office in Obarrio, Panama City." : "Oficina en Obarrio, Ciudad de Panamá."}</h2>
+          <h2>
+            {isEn ? <>Office in Obarrio,<br />Panama City.</> : <>Oficina en Obarrio,<br />Ciudad de Panamá.</>}
+          </h2>
           <p>{isEn ? "Panama Collectors operates from the PDC Building on Calle 56 D Este, a central location for coordination with financial institutions and operating teams." : "Panama Collectors atiende desde el Edificio PDC, en Calle 56 D Este, una zona céntrica para coordinación con entidades financieras y equipos operativos."}</p>
           <img loading="lazy" decoding="async" className="location-office-image" src="/assets/images/generated/panama-collectors-equipo-corporativo.webp" alt="Oficina Panama Collectors en Obarrio" />
           <div className="location-details">
