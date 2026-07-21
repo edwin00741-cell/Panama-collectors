@@ -1523,7 +1523,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 }
 
 .location-copy {
-  max-width: 520px;
+  max-width: 620px;
 }
 
 .location-copy h2 {
@@ -1533,6 +1533,7 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
   line-height: 1.04;
   font-weight: 760;
   letter-spacing: -0.025em;
+  white-space: nowrap;
 }
 
 .location-copy > p {
@@ -2893,9 +2894,10 @@ h1, h2, h3, p { overflow-wrap: anywhere; }
 
   .location-copy h2 {
     max-width: 520px;
-    font-size: clamp(2rem, 7.6vw, 2.8rem);
+    font-size: clamp(2rem, 6.2vw, 2.5rem);
     line-height: 1.02;
     letter-spacing: -0.055em;
+    white-space: nowrap;
   }
 }
 
